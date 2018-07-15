@@ -1,0 +1,16 @@
+{
+  "title": "制作事例",
+  "_template": "works",
+  "_fieldset": "entry",
+  "screenshot": "zionus.png",
+  "domain": "www.zionusbsm.com",
+  "live-url": "http://www.zionusbsm.com/",
+  "back-url": "/#works",
+  "bodyContent": "",
+  "bodyHtml": "",
+  "dir": "contents/json/en/works",
+  "base": "zionus.json",
+  "ext": ".json",
+  "sourceBase": "zionus.md",
+  "sourceExt": ".md"
+}

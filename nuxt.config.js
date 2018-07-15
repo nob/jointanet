@@ -1,4 +1,10 @@
 module.exports = {
+  mode: 'spa',
+  generate: {
+    routes: [
+      '/articles/facebook',
+    ]
+  },
   /*
   ** Headers of the page
   */
