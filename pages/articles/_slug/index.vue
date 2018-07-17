@@ -19,7 +19,7 @@ import { sourceFileArray, fileMap } from '../../../contents/json/summary.json';
 
 export default {
   validate ({ params }) {
-    return sourceFileArray.includes(`contents/ja/articles/${params.slug}.md`);
+    return sourceFileArray.includes(`contents/articles/${params.slug}.ja.md`);
   },
   data () {
     return {
@@ -27,7 +27,7 @@ export default {
     };
   },
   mounted () {
-    this.article = require(`~/contents/json/ja/articles/${this.$route.params.slug}.json`);
+    this.article = require(`~/contents/json/articles/${this.$route.params.slug}.ja.json`);
   },
   // head() {
   //   const title = `${this.title} - SUSTINA`;
