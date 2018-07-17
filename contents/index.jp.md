@@ -1,13 +1,9 @@
 ---
 title: Businesses Grow and Change Make Sure Your Web Site Grows and Changes with You!
 date: '2018-07-06T00:00:00+09:00'
-address: 住所
+address: 住所<br>kkkkk
 phone: 電話
 business: ビジネス
 name: やまべ
-sec1: '# あああああ'
-inquiry1: '# いいいい'
-inquiry2: '# ううううう'
-inquiry3: '# えええええ'
 ---
-
+# EEEEE
