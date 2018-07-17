@@ -24,12 +24,12 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Fearured Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
-  - name: "article_jp"
+  - name: "article_ja"
     label: "Article(Japanese)"
     folder: "contents/articles"
     create: true
     slug: "{{slug}}"
-    extension: "jp.md"
+    extension: "ja.md"
     format: 'frontmatter'
     fields:
       - {label: "Title", name: "title", widget: "string"}
@@ -50,12 +50,12 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Fearured Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
-  - name: "work_jp"
+  - name: "work_ja"
     label: "Work(Japnese)"
     folder: "contents/works"
     create: true
     slug: "{{slug}}"
-    extension: "jp.md"
+    extension: "ja.md"
     format: 'frontmatter'
     fields:
       - {label: "Title", name: "title", widget: "string"}
@@ -76,12 +76,12 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Fearured Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
-  - name: "service_jp"
+  - name: "service_ja"
     label: "Services(Japanese)"
     folder: "contents/services"
     create: true
     slug: "{{slug}}"
-    extension: "jp.md"
+    extension: "ja.md"
     format: 'frontmatter'
     fields:
       - {label: "Title", name: "title", widget: "string"}
@@ -107,8 +107,8 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Inquiry3", name: "inquiry3", widget: "text"}
 
       - label: "Index(Japanese)"
-        name: "index_jp"
-        file: "contents/index.jp.md"
+        name: "index_ja"
+        file: "contents/index.ja.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Address", name: "address", widget: "string"}
@@ -128,8 +128,8 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Body", name: "body", widget: "markdown"}
 
       - label: "Price(Japanese)"
-        name: "price_jp"
-        file: "contents/price.jp.md"
+        name: "price_ja"
+        file: "contents/price.ja.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
