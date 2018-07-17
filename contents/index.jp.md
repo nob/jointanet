@@ -5,9 +5,5 @@ address: 住所
 phone: 電話
 business: ビジネス
 name: やまべ
-sec1: '# あああああ'
-inquiry1: '# いいいい'
-inquiry2: '# ううううう'
-inquiry3: '# えええええ'
 ---
-
+# EEEEE
