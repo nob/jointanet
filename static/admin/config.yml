@@ -107,8 +107,8 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Inquiry2", name: "inquiry2", widget: "markdown"}
           - {label: "Inquiry3", name: "inquiry3", widget: "markdown"}
 
-      - label: "Index(English)"
-        name: "index_en"
+      - label: "Index(Japanese)"
+        name: "index_jp"
         file: "contents/index.jp.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
@@ -131,8 +131,8 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Fearured Image", name: "image", widget: "image", required: false}
           - {label: "Body", name: "body", widget: "markdown"}
 
-      - label: "Price(English)"
-        name: "price_en"
+      - label: "Price(Japanese)"
+        name: "price_jp"
         file: "contents/price.jp.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
