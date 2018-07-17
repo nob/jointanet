@@ -11,34 +11,72 @@ media_folder: "static/images/uploads" # Media files will be stored in the repo u
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "article" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Article" # Used in the UI, ie.: "New Post"
+  - name: "article_en" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Article(English)" # Used in the UI, ie.: "New Post"
     folder: "contents/articles" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}.{{language}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    extension: "en.md"
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Language", name: "language", widget: "select", options: ["en", "es"]}
       - {label: "Fearured Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
-  - name: "work"
-    label: "Work"
-    folder: "contents/works"
+  - name: "article_jp"
+    label: "Article(Japanese)"
+    folder: "contents/articles"
     create: true
     slug: "{{slug}}"
+    extension: "jp.md"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Fearured Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
-  - name: "service"
-    label: "Services"
+  - name: "work_en"
+    label: "Work(English)"
+    folder: "contents/works"
+    create: true
+    slug: "{{slug}}"
+    extension: "en.md"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Fearured Image", name: "image", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "work_jp"
+    label: "Work(Japnese)"
+    folder: "contents/works"
+    create: true
+    slug: "{{slug}}"
+    extension: "jp.md"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Fearured Image", name: "image", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "service_en"
+    label: "Services(English)"
     folder: "contents/services"
     create: true
     slug: "{{slug}}"
+    extension: "en.md"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Fearured Image", name: "image", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "service_jp"
+    label: "Services(Japanese)"
+    folder: "contents/services"
+    create: true
+    slug: "{{slug}}"
+    extension: "jp.md"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
@@ -48,9 +86,9 @@ collections: # A list of collections the CMS should be able to edit
   - name: "page"
     label: "Page"
     files:
-      - label: "Index"
-        name: "index"
-        file: "contents/index.md"
+      - label: "Index(English)"
+        name: "index_en"
+        file: "contents/index.en.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Publish Date", name: "date", widget: "datetime"}
@@ -63,9 +101,33 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Inquiry2", name: "inquiry2", widget: "markdown"}
           - {label: "Inquiry3", name: "inquiry3", widget: "markdown"}
 
-      - label: "Price"
-        name: "price"
-        file: "contents/price.md"
+      - label: "Index(English)"
+        name: "index_en"
+        file: "contents/index.en.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Publish Date", name: "date", widget: "datetime"}
+          - {label: "Address", name: "image", widget: "string"}
+          - {label: "Phone", name: "image", widget: "string"}
+          - {label: "Business details", name: "business", widget: "string"}
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Section1", name: "sec1", widget: "markdown"}
+          - {label: "Inquiry1", name: "inquiry1", widget: "markdown"}
+          - {label: "Inquiry2", name: "inquiry2", widget: "markdown"}
+          - {label: "Inquiry3", name: "inquiry3", widget: "markdown"}
+
+      - label: "Price(English)"
+        name: "price_en"
+        file: "contents/price.en.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Publish Date", name: "date", widget: "datetime"}
+          - {label: "Fearured Image", name: "image", widget: "image", required: false}
+          - {label: "Body", name: "body", widget: "markdown"}
+
+      - label: "Price(English)"
+        name: "price_en"
+        file: "contents/price.en.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Publish Date", name: "date", widget: "datetime"}
