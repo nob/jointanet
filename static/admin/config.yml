@@ -15,7 +15,7 @@ collections: # A list of collections the CMS should be able to edit
     label: "Article" # Used in the UI, ie.: "New Post"
     folder: "contents/articles" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}-{{language}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{slug}}.{{language}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
