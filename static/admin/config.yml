@@ -22,6 +22,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Fearured Image", name: "image", widget: "image", required: false}
+      - {label: "Back URL", name: "back-url", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "article_ja"
@@ -35,6 +36,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Fearured Image", name: "image", widget: "image", required: false}
+      - {label: "Back URL", name: "back-url", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "work_en"
@@ -47,7 +49,10 @@ collections: # A list of collections the CMS should be able to edit
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Fearured Image", name: "image", widget: "image", required: false}
+      - {label: "Screentshot", name: "screenshot", widget: "image"}
+      - {label: "Domain", name: "domain", widget: "string"}
+      - {label: "Live URL", name: "live-url", widget: "string"}
+      - {label: "Back URL", name: "back-url", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "work_ja"
@@ -60,7 +65,10 @@ collections: # A list of collections the CMS should be able to edit
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Fearured Image", name: "image", widget: "image", required: false}
+      - {label: "Screentshot", name: "screenshot", widget: "image"}
+      - {label: "Domain", name: "domain", widget: "string"}
+      - {label: "Live URL", name: "live-url", widget: "string"}
+      - {label: "Back URL", name: "back-url", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "service_en"
@@ -125,6 +133,7 @@ collections: # A list of collections the CMS should be able to edit
         file: "contents/price.en.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
+          - {label: "Back URL", name: "back-url", widget: "string", required: false}
           - {label: "Body", name: "body", widget: "markdown"}
 
       - label: "Price(Japanese)"
@@ -132,4 +141,5 @@ collections: # A list of collections the CMS should be able to edit
         file: "contents/price.ja.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
+          - {label: "Back URL", name: "back-url", widget: "string", required: false}
           - {label: "Body", name: "body", widget: "markdown"}
