@@ -5,5 +5,27 @@ address: 住所<br>kkkkk
 phone: 電話
 business: ビジネス
 name: やまべ
+sec1: |-
+  kdfjsjfkasfkf
+  jfdksajfksdaf
+  dddddd
+  eeeeee
+inquiry1: |
+  あああああ
+  いいいいいいいいいい
+  うううううう
+
+  えええええ
+  おおおおお
+
+  かかか
+inquiry2: |
+  fだsふぁsっf
+
+
+  っっっっっd
+inquiry3: |
+  dふぁふぁsf
+  っっっっっっっっでえええ
 ---
-# EEEEE
+
