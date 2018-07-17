@@ -1,5 +1,17 @@
 {
   "fileMap": {
+    "contents/json/articles/facebook.jp.json": {
+      "title": "あなたがのビジネスがfacebookページだけではなく、独自のウェブサイトを持つ価値",
+      "_template": "articles",
+      "_fieldset": "entry",
+      "image": "service-4-l.png",
+      "back-url": "/#service",
+      "dir": "contents/json/articles",
+      "base": "facebook.jp.json",
+      "ext": ".json",
+      "sourceBase": "facebook.jp.md",
+      "sourceExt": ".md"
+    },
     "contents/json/en/articles/facebook.json": {
       "title": "A Facebook Page for your Business may be Helpful but is it Really Enough?",
       "_template": "articles",
@@ -34,41 +46,51 @@
       "sourceBase": "analysis.md",
       "sourceExt": ".md"
     },
-    "contents/json/en/services/production.json": {
-      "title": "Website Planning and Production",
-      "_template": "services",
+    "contents/json/en/works/skfine.json": {
+      "title": "制作事例",
+      "_template": "works",
       "_fieldset": "entry",
-      "sub-title": "for PC, Tablet and Mobile",
-      "image": "service-1-l.png",
-      "dir": "contents/json/en/services",
-      "base": "production.json",
+      "screenshot": "skfine.png",
+      "domain": "www.skfine.com",
+      "live-url": "http://www.skfine.com",
+      "back-url": "/#works",
+      "dir": "contents/json/en/works",
+      "base": "skfine.json",
       "ext": ".json",
-      "sourceBase": "production.md",
+      "sourceBase": "skfine.md",
       "sourceExt": ".md"
     },
-    "contents/json/en/services/operation.json": {
-      "title": "Advice and Support to<br>Make the Best of your Site",
+    "contents/json/ja/services/operation.json": {
+      "title": "ウェブサイトの<br>活用サポートやアドバイス",
       "_template": "services",
       "_fieldset": "entry",
       "image": "service-2-l.png",
-      "dir": "contents/json/en/services",
+      "dir": "contents/json/ja/services",
       "base": "operation.json",
       "ext": ".json",
       "sourceBase": "operation.md",
       "sourceExt": ".md"
     },
-    "contents/json/en/services/facebook.json": {
-      "title": "Linkage with Facebook, Instagram and other SNS",
-      "_template": "services",
-      "_fieldset": "entry",
-      "image": "service-4-l.png",
-      "dir": "contents/json/en/services",
-      "base": "facebook.json",
+    "contents/json/ja/404.json": {
+      "title": "404 No Go. How Can I Help?",
+      "dir": "contents/json/ja",
+      "base": "404.json",
       "ext": ".json",
-      "sourceBase": "facebook.md",
+      "sourceBase": "404.md",
       "sourceExt": ".md"
     },
-    "contents/json/en/works/bglen.json": {
+    "contents/json/ja/price/page.json": {
+      "title": "eng 月額￥35,000 + 初期費用￥0。<small><br>シンプルな料金設定</small>",
+      "_template": "price",
+      "_fieldset": "page",
+      "back-url": "/#price",
+      "dir": "contents/json/ja/price",
+      "base": "page.json",
+      "ext": ".json",
+      "sourceBase": "page.md",
+      "sourceExt": ".md"
+    },
+    "contents/json/ja/works/bglen.json": {
       "title": "制作事例",
       "_template": "works",
       "_fieldset": "entry",
@@ -76,10 +98,79 @@
       "domain": "www.bglen.com",
       "live-url": "http://bglenish.com/",
       "back-url": "/#works",
-      "dir": "contents/json/en/works",
+      "dir": "contents/json/ja/works",
       "base": "bglen.json",
       "ext": ".json",
       "sourceBase": "bglen.md",
+      "sourceExt": ".md"
+    },
+    "contents/json/works/bglen.json": {
+      "title": "制作事例",
+      "_template": "works",
+      "_fieldset": "entry",
+      "screenshot": "bglen.png",
+      "domain": "www.bglen.com",
+      "live-url": "http://bglenish.com/",
+      "back-url": "/#works",
+      "dir": "contents/json/works",
+      "base": "bglen.json",
+      "ext": ".json",
+      "sourceBase": "bglen.md",
+      "sourceExt": ".md"
+    },
+    "contents/json/services/analysis.json": {
+      "title": "サイトに訪れた人の反応と<br>動向の分析結果をレポート",
+      "_template": "services",
+      "_fieldset": "entry",
+      "image": "service-3-l.png",
+      "dir": "contents/json/services",
+      "base": "analysis.json",
+      "ext": ".json",
+      "sourceBase": "analysis.md",
+      "sourceExt": ".md"
+    },
+    "contents/json/articles/engeng.en.json": {
+      "title": "engeng",
+      "date": "2018-07-17T17:26:26+09:00",
+      "dir": "contents/json/articles",
+      "base": "engeng.en.json",
+      "ext": ".json",
+      "sourceBase": "engeng.en.md",
+      "sourceExt": ".md"
+    },
+    "contents/json/404.json": {
+      "title": "404 No Go. How Can I Help?",
+      "dir": "contents/json",
+      "base": "404.json",
+      "ext": ".json",
+      "sourceBase": "404.md",
+      "sourceExt": ".md"
+    },
+    "contents/json/en/404.json": {
+      "title": "404 No Go. How Can I Help?",
+      "dir": "contents/json/en",
+      "base": "404.json",
+      "ext": ".json",
+      "sourceBase": "404.md",
+      "sourceExt": ".md"
+    },
+    "contents/json/en/page.json": {
+      "title": "Businesses Grow and Change <br> Make Sure Your Web Site Grows and Changes with You!",
+      "_fieldset": "page",
+      "_template": "landing",
+      "dir": "contents/json/en",
+      "base": "page.json",
+      "ext": ".json",
+      "sourceBase": "page.md",
+      "sourceExt": ".md"
+    },
+    "contents/json/articles/japjap.jp.json": {
+      "title": "japjap",
+      "date": "2018-07-17T17:27:02+09:00",
+      "dir": "contents/json/articles",
+      "base": "japjap.jp.json",
+      "ext": ".json",
+      "sourceBase": "japjap.jp.md",
       "sourceExt": ".md"
     },
     "contents/json/en/works/ippuku.json": {
@@ -96,6 +187,52 @@
       "sourceBase": "ippuku.md",
       "sourceExt": ".md"
     },
+    "contents/json/en/services/operation.json": {
+      "title": "Advice and Support to<br>Make the Best of your Site",
+      "_template": "services",
+      "_fieldset": "entry",
+      "image": "service-2-l.png",
+      "dir": "contents/json/en/services",
+      "base": "operation.json",
+      "ext": ".json",
+      "sourceBase": "operation.md",
+      "sourceExt": ".md"
+    },
+    "contents/json/en/services/production.json": {
+      "title": "Website Planning and Production",
+      "_template": "services",
+      "_fieldset": "entry",
+      "sub-title": "for PC, Tablet and Mobile",
+      "image": "service-1-l.png",
+      "dir": "contents/json/en/services",
+      "base": "production.json",
+      "ext": ".json",
+      "sourceBase": "production.md",
+      "sourceExt": ".md"
+    },
+    "contents/json/en/services/facebook.json": {
+      "title": "Linkage with Facebook, Instagram and other SNS",
+      "_template": "services",
+      "_fieldset": "entry",
+      "image": "service-4-l.png",
+      "dir": "contents/json/en/services",
+      "base": "facebook.json",
+      "ext": ".json",
+      "sourceBase": "facebook.md",
+      "sourceExt": ".md"
+    },
+    "contents/json/articles/facebook.en.json": {
+      "title": "あなたがのビジネスがfacebookページだけではなく、独自のウェブサイトを持つ価値",
+      "_template": "articles",
+      "_fieldset": "entry",
+      "image": "service-4-l.png",
+      "back-url": "/#service",
+      "dir": "contents/json/articles",
+      "base": "facebook.en.json",
+      "ext": ".json",
+      "sourceBase": "facebook.en.md",
+      "sourceExt": ".md"
+    },
     "contents/json/en/works/soratoiro.json": {
       "title": "制作事例",
       "_template": "works",
@@ -110,18 +247,24 @@
       "sourceBase": "soratoiro.md",
       "sourceExt": ".md"
     },
-    "contents/json/en/works/skfine.json": {
-      "title": "制作事例",
-      "_template": "works",
-      "_fieldset": "entry",
-      "screenshot": "skfine.png",
-      "domain": "www.skfine.com",
-      "live-url": "http://www.skfine.com",
-      "back-url": "/#works",
-      "dir": "contents/json/en/works",
-      "base": "skfine.json",
+    "contents/json/ja/page.json": {
+      "title": "Businesses Grow and Change Make Sure Your Web Site Grows and Changes with You!",
+      "_fieldset": "page",
+      "_template": "landing",
+      "dir": "contents/json/ja",
+      "base": "page.json",
       "ext": ".json",
-      "sourceBase": "skfine.md",
+      "sourceBase": "page.md",
+      "sourceExt": ".md"
+    },
+    "contents/json/index.en.json": {
+      "title": "Businesses Grow and Change Make Sure Your Web Site Grows and Changes with You!",
+      "_fieldset": "page",
+      "_template": "landing",
+      "dir": "contents/json",
+      "base": "index.en.json",
+      "ext": ".json",
+      "sourceBase": "index.en.md",
       "sourceExt": ".md"
     },
     "contents/json/en/works/kioto.json": {
@@ -152,16 +295,14 @@
       "sourceBase": "zionus.md",
       "sourceExt": ".md"
     },
-    "contents/json/ja/articles/facebook.json": {
-      "title": "あなたがのビジネスがfacebookページだけではなく、独自のウェブサイトを持つ価値",
-      "_template": "articles",
-      "_fieldset": "entry",
-      "image": "service-4-l.png",
-      "back-url": "/#service",
-      "dir": "contents/json/ja/articles",
-      "base": "facebook.json",
+    "contents/json/index.jp.json": {
+      "title": "Businesses Grow and Change Make Sure Your Web Site Grows and Changes with You!",
+      "_fieldset": "page",
+      "_template": "landing",
+      "dir": "contents/json",
+      "base": "index.jp.json",
       "ext": ".json",
-      "sourceBase": "facebook.md",
+      "sourceBase": "index.jp.md",
       "sourceExt": ".md"
     },
     "contents/json/ja/services/facebook.json": {
@@ -175,40 +316,7 @@
       "sourceBase": "facebook.md",
       "sourceExt": ".md"
     },
-    "contents/json/ja/services/analysis.json": {
-      "title": "サイトに訪れた人の反応と<br>動向の分析結果をレポート",
-      "_template": "services",
-      "_fieldset": "entry",
-      "image": "service-3-l.png",
-      "dir": "contents/json/ja/services",
-      "base": "analysis.json",
-      "ext": ".json",
-      "sourceBase": "analysis.md",
-      "sourceExt": ".md"
-    },
-    "contents/json/ja/price/page.json": {
-      "title": "eng 月額￥35,000 + 初期費用￥0。<small><br>シンプルな料金設定</small>",
-      "_template": "price",
-      "_fieldset": "page",
-      "back-url": "/#price",
-      "dir": "contents/json/ja/price",
-      "base": "page.json",
-      "ext": ".json",
-      "sourceBase": "page.md",
-      "sourceExt": ".md"
-    },
-    "contents/json/ja/services/operation.json": {
-      "title": "ウェブサイトの<br>活用サポートやアドバイス",
-      "_template": "services",
-      "_fieldset": "entry",
-      "image": "service-2-l.png",
-      "dir": "contents/json/ja/services",
-      "base": "operation.json",
-      "ext": ".json",
-      "sourceBase": "operation.md",
-      "sourceExt": ".md"
-    },
-    "contents/json/ja/works/bglen.json": {
+    "contents/json/en/works/bglen.json": {
       "title": "制作事例",
       "_template": "works",
       "_fieldset": "entry",
@@ -216,38 +324,10 @@
       "domain": "www.bglen.com",
       "live-url": "http://bglenish.com/",
       "back-url": "/#works",
-      "dir": "contents/json/ja/works",
+      "dir": "contents/json/en/works",
       "base": "bglen.json",
       "ext": ".json",
       "sourceBase": "bglen.md",
-      "sourceExt": ".md"
-    },
-    "contents/json/ja/works/kioto.json": {
-      "title": "制作事例",
-      "_template": "works",
-      "_fieldset": "entry",
-      "screenshot": "kioto.png",
-      "domain": "www.kiotoinc.com",
-      "live-url": "http://www.kiotoinc.com/",
-      "back-url": "/#works",
-      "dir": "contents/json/ja/works",
-      "base": "kioto.json",
-      "ext": ".json",
-      "sourceBase": "kioto.md",
-      "sourceExt": ".md"
-    },
-    "contents/json/ja/works/ippuku.json": {
-      "title": "制作事例",
-      "_template": "works",
-      "_fieldset": "entry",
-      "screenshot": "ippuku.png",
-      "domain": "www.ippukuberkeley.com",
-      "live-url": "http://www.ippukuberkeley.com/",
-      "back-url": "/#works",
-      "dir": "contents/json/ja/works",
-      "base": "ippuku.json",
-      "ext": ".json",
-      "sourceBase": "ippuku.md",
       "sourceExt": ".md"
     },
     "contents/json/ja/services/production.json": {
@@ -260,6 +340,17 @@
       "base": "production.json",
       "ext": ".json",
       "sourceBase": "production.md",
+      "sourceExt": ".md"
+    },
+    "contents/json/price.jp.json": {
+      "title": "eng 月額￥35,000 + 初期費用￥0。<small><br>シンプルな料金設定</small>",
+      "_template": "price",
+      "_fieldset": "page",
+      "back-url": "/#price",
+      "dir": "contents/json",
+      "base": "price.jp.json",
+      "ext": ".json",
+      "sourceBase": "price.jp.md",
       "sourceExt": ".md"
     },
     "contents/json/ja/works/skfine.json": {
@@ -290,6 +381,34 @@
       "sourceBase": "soratoiro.md",
       "sourceExt": ".md"
     },
+    "contents/json/ja/works/ippuku.json": {
+      "title": "制作事例",
+      "_template": "works",
+      "_fieldset": "entry",
+      "screenshot": "ippuku.png",
+      "domain": "www.ippukuberkeley.com",
+      "live-url": "http://www.ippukuberkeley.com/",
+      "back-url": "/#works",
+      "dir": "contents/json/ja/works",
+      "base": "ippuku.json",
+      "ext": ".json",
+      "sourceBase": "ippuku.md",
+      "sourceExt": ".md"
+    },
+    "contents/json/ja/works/kioto.json": {
+      "title": "制作事例",
+      "_template": "works",
+      "_fieldset": "entry",
+      "screenshot": "kioto.png",
+      "domain": "www.kiotoinc.com",
+      "live-url": "http://www.kiotoinc.com/",
+      "back-url": "/#works",
+      "dir": "contents/json/ja/works",
+      "base": "kioto.json",
+      "ext": ".json",
+      "sourceBase": "kioto.md",
+      "sourceExt": ".md"
+    },
     "contents/json/ja/works/zionus.json": {
       "title": "制作事例",
       "_template": "works",
@@ -303,10 +422,155 @@
       "ext": ".json",
       "sourceBase": "zionus.md",
       "sourceExt": ".md"
+    },
+    "contents/json/price.en.json": {
+      "title": "eng 月額￥35,000 + 初期費用￥0。<small><br>シンプルな料金設定</small>",
+      "_template": "price",
+      "_fieldset": "page",
+      "back-url": "/#price",
+      "dir": "contents/json",
+      "base": "price.en.json",
+      "ext": ".json",
+      "sourceBase": "price.en.md",
+      "sourceExt": ".md"
+    },
+    "contents/json/works/ippuku.json": {
+      "title": "制作事例",
+      "_template": "works",
+      "_fieldset": "entry",
+      "screenshot": "ippuku.png",
+      "domain": "www.ippukuberkeley.com",
+      "live-url": "http://www.ippukuberkeley.com/",
+      "back-url": "/#works",
+      "dir": "contents/json/works",
+      "base": "ippuku.json",
+      "ext": ".json",
+      "sourceBase": "ippuku.md",
+      "sourceExt": ".md"
+    },
+    "contents/json/services/operation.json": {
+      "title": "ウェブサイトの<br>活用サポートやアドバイス",
+      "_template": "services",
+      "_fieldset": "entry",
+      "image": "service-2-l.png",
+      "dir": "contents/json/services",
+      "base": "operation.json",
+      "ext": ".json",
+      "sourceBase": "operation.md",
+      "sourceExt": ".md"
+    },
+    "contents/json/works/soratoiro.json": {
+      "title": "制作事例",
+      "_template": "works",
+      "_fieldset": "entry",
+      "screenshot": "soratoiro.png",
+      "domain": "soratoiro.com",
+      "live-url": "http://soratoiro.com/",
+      "back-url": "/#works",
+      "dir": "contents/json/works",
+      "base": "soratoiro.json",
+      "ext": ".json",
+      "sourceBase": "soratoiro.md",
+      "sourceExt": ".md"
+    },
+    "contents/json/works/zionus.json": {
+      "title": "制作事例",
+      "_template": "works",
+      "_fieldset": "entry",
+      "screenshot": "zionus.png",
+      "domain": "www.zionusbsm.com",
+      "live-url": "http://www.zionusbsm.com/",
+      "back-url": "/#works",
+      "dir": "contents/json/works",
+      "base": "zionus.json",
+      "ext": ".json",
+      "sourceBase": "zionus.md",
+      "sourceExt": ".md"
+    },
+    "contents/json/services/facebook.json": {
+      "title": "Linkage with Facebook, Instagram and other SNS",
+      "_template": "services",
+      "_fieldset": "entry",
+      "image": "service-4-l.png",
+      "dir": "contents/json/services",
+      "base": "facebook.json",
+      "ext": ".json",
+      "sourceBase": "facebook.md",
+      "sourceExt": ".md"
+    },
+    "contents/json/works/skfine.json": {
+      "title": "制作事例",
+      "_template": "works",
+      "_fieldset": "entry",
+      "screenshot": "skfine.png",
+      "domain": "www.skfine.com",
+      "live-url": "http://www.skfine.com",
+      "back-url": "/#works",
+      "dir": "contents/json/works",
+      "base": "skfine.json",
+      "ext": ".json",
+      "sourceBase": "skfine.md",
+      "sourceExt": ".md"
+    },
+    "contents/json/services/production.json": {
+      "title": "Website Planning and Production",
+      "_template": "services",
+      "_fieldset": "entry",
+      "sub-title": "Website Planning and Production<small><br>for PC, Tablet and Mobile</small>",
+      "image": "service-1-l.png",
+      "dir": "contents/json/services",
+      "base": "production.json",
+      "ext": ".json",
+      "sourceBase": "production.md",
+      "sourceExt": ".md"
+    },
+    "contents/json/works/kioto.json": {
+      "title": "制作事例",
+      "_template": "works",
+      "_fieldset": "entry",
+      "screenshot": "kioto.png",
+      "domain": "www.kiotoinc.com",
+      "live-url": "http://www.kiotoinc.com/",
+      "back-url": "/#works",
+      "dir": "contents/json/works",
+      "base": "kioto.json",
+      "ext": ".json",
+      "sourceBase": "kioto.md",
+      "sourceExt": ".md"
+    },
+    "contents/json/ja/articles/facebook.json": {
+      "title": "あなたがのビジネスがfacebookページだけではなく、独自のウェブサイトを持つ価値",
+      "_template": "articles",
+      "_fieldset": "entry",
+      "image": "service-4-l.png",
+      "back-url": "/#service",
+      "dir": "contents/json/ja/articles",
+      "base": "facebook.json",
+      "ext": ".json",
+      "sourceBase": "facebook.md",
+      "sourceExt": ".md"
+    },
+    "contents/json/ja/services/analysis.json": {
+      "title": "サイトに訪れた人の反応と<br>動向の分析結果をレポート",
+      "_template": "services",
+      "_fieldset": "entry",
+      "image": "service-3-l.png",
+      "dir": "contents/json/ja/services",
+      "base": "analysis.json",
+      "ext": ".json",
+      "sourceBase": "analysis.md",
+      "sourceExt": ".md"
     }
   },
   "sourceFileArray": [
+    "contents/404.md",
+    "contents/articles/engeng.en.md",
+    "contents/articles/facebook.en.md",
+    "contents/articles/facebook.jp.md",
+    "contents/articles/japjap.jp.md",
+    "contents/en/404.md",
     "contents/en/articles/facebook.md",
+    "contents/en/page.md",
     "contents/en/price/page.md",
     "contents/en/services/analysis.md",
     "contents/en/services/facebook.md",
@@ -318,7 +582,11 @@
     "contents/en/works/skfine.md",
     "contents/en/works/soratoiro.md",
     "contents/en/works/zionus.md",
+    "contents/index.en.md",
+    "contents/index.jp.md",
+    "contents/ja/404.md",
     "contents/ja/articles/facebook.md",
+    "contents/ja/page.md",
     "contents/ja/price/page.md",
     "contents/ja/services/analysis.md",
     "contents/ja/services/facebook.md",
@@ -329,6 +597,18 @@
     "contents/ja/works/kioto.md",
     "contents/ja/works/skfine.md",
     "contents/ja/works/soratoiro.md",
-    "contents/ja/works/zionus.md"
+    "contents/ja/works/zionus.md",
+    "contents/price.en.md",
+    "contents/price.jp.md",
+    "contents/services/analysis.md",
+    "contents/services/facebook.md",
+    "contents/services/operation.md",
+    "contents/services/production.md",
+    "contents/works/bglen.md",
+    "contents/works/ippuku.md",
+    "contents/works/kioto.md",
+    "contents/works/skfine.md",
+    "contents/works/soratoiro.md",
+    "contents/works/zionus.md"
   ]
 }

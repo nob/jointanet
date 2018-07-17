@@ -9,7 +9,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "npm run md2json && nuxt generate",
-    "md2json": "processmd contents/**/**/*.md --outputDir contents/json --stdout > contents/json/summary.json",
+    "md2json": "processmd \"contents/**/*.md\" --outputDir contents/json --stdout > contents/json/summary.json",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint"
   },
