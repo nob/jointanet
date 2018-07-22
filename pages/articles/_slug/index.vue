@@ -1,14 +1,14 @@
 <template>
   <section>
     <h1>
-      {{ article.title }}
+      {{ title }} {{locale}}
     </h1>
     <hr>
     <div class="">
       <p class="ml-3">
-        <b>{{ this.$route.params.slug }}</b>
+        <b>{{ params.slug }}</b>
       </p>
-      <div class="article-body" v-html="article.bodyHtml">
+      <div class="article-body" v-html="bodyHtml">
       </div>
     </div>
   </section>
@@ -16,18 +16,16 @@
 <script>
 // import moment from 'moment-timezone';
 import { sourceFileArray, fileMap } from '../../../contents/json/summary.json';
-
 export default {
-  validate ({ params }) {
-    return sourceFileArray.includes(`contents/articles/${params.slug}.ja.md`);
+  validate ({ params, store }) {
+    return sourceFileArray.includes(`contents/articles/${params.slug}.${store.state.locale}.md`);
   },
-  data () {
-    return {
-      article: {}
-    };
+  asyncData ({ params, store}) {
+    const locale = store.state.locale
+    return Object.assign({}, require(`~/contents/json/articles/${params.slug}.${locale}.json`), { params, locale });
   },
   mounted () {
-    this.article = require(`~/contents/json/articles/${this.$route.params.slug}.ja.json`);
+    // this.article = require(`~/contents/json/articles/${this.$route.params.slug}.en.json`);
   },
   // head() {
   //   const title = `${this.title} - SUSTINA`;

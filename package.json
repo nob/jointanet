@@ -8,13 +8,15 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "npm run md2json && nuxt generate",
+    "generate:ja": "npm run md2json && BUILD_LOCALE=ja nuxt generate",
+    "generate:en": "npm run md2json && BUILD_LOCALE=en nuxt generate",
     "md2json": "processmd \"contents/**/*.md\" --outputDir contents/json --stdout > contents/json/summary.json",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^1.4.1"
+    "nuxt": "^1.4.1",
+    "vue-i18n": "^8.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

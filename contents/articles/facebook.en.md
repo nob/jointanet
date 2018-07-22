@@ -23,7 +23,7 @@ Besides having this space/booth on Facebook, it is essential for you to create a
 <br/><br/>
 ###The Limits of Expression on Facebook
 As you may well know, a Facebook business page will look a lot like what you see below:
-![Facebook page](/assets/img/fbpage.png)
+![Facebook page](~/assets/img/fbpage.png)
 
 The upper heading is always the familiar Facebook logo and blue color. Below that is a Facebook determined one-size-fits-all space for a banner graphic/photo. The background is light blue in color and on the right you will find ads and products from other companies. On such a standardized type of page with limited ways to express your message, is it really possible to show your originality and draw people to your business, product or service? 　
 
