@@ -1,7 +1,7 @@
 <template>
   <section>
     <h1>
-      {{ title }} {{locale}}
+      {{ title }} {{params.locale}}
     </h1>
     <hr>
     <div class="">
@@ -15,17 +15,13 @@
 </template>
 <script>
 // import moment from 'moment-timezone';
-import { sourceFileArray, fileMap } from '../../../contents/json/summary.json';
+import { sourceFileArray, fileMap } from '../../../../contents/json/summary.json';
 export default {
   validate ({ params, store }) {
-    return sourceFileArray.includes(`contents/articles/${params.slug}.${store.state.locale}.md`);
+    return sourceFileArray.includes(`contents/articles/${params.slug}.${params.locale}.md`);
   },
   asyncData ({ params, store}) {
-    const locale = store.state.locale
-    return Object.assign({}, require(`~/contents/json/articles/${params.slug}.${locale}.json`), { params, locale });
-  },
-  mounted () {
-    // this.article = require(`~/contents/json/articles/${this.$route.params.slug}.en.json`);
+    return Object.assign({}, require(`~/contents/json/articles/${params.slug}.${params.locale}.json`), { params });
   },
   // head() {
   //   const title = `${this.title} - SUSTINA`;

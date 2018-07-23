@@ -6,12 +6,9 @@ import VueI18n from 'vue-i18n'
 
 Vue.use(VueI18n)
 
-export default ({ app, store }) => {
-  console.log('inside plugin');
-  console.log(store.state.locale);
-  console.log('inside plugin');
+export default ({ app, params }) => {
   app.i18n = new VueI18n({
-    locale: store.state.locale,
+    locale: params.locale,
     fallbackLocale: 'en',
     // messages: {
     //   en, ja

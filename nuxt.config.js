@@ -2,13 +2,22 @@ module.exports = {
   mode: 'spa',
   devtools: true,
   env: {
-    buildLocale: process.env.BUILD_LOCALE || 'en'
   },
   plugins: ['~/plugins/i18n.js'],
   generate: {
     routes: [
-      '/articles/facebook',
+      '/ja/articles/facebook',
+      '/en/articles/facebook'
     ]
+    // routes: callback => {
+    //   const { sourceFileArray } = require('./contents/news/json/summary.json');
+    //   const routes = sourceFileArray.map(sourceFileName => {
+    //     return sourceFileName.replace(/^contents\//, '\/')
+    //       .replace(/\/(\d{4})-(\d{2})-(\d{2})-/, '\/$1-$2-$3\/')
+    //       .replace(/\.md$/, '');
+    //   });
+    //   callback(null, routes);
+    // }
   },
   /*
   ** Headers of the page
