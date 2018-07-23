@@ -5,19 +5,13 @@ module.exports = {
   },
   plugins: ['~/plugins/i18n.js'],
   generate: {
-    routes: [
-      '/ja/articles/facebook',
-      '/en/articles/facebook'
-    ]
-    // routes: callback => {
-    //   const { sourceFileArray } = require('./contents/news/json/summary.json');
-    //   const routes = sourceFileArray.map(sourceFileName => {
-    //     return sourceFileName.replace(/^contents\//, '\/')
-    //       .replace(/\/(\d{4})-(\d{2})-(\d{2})-/, '\/$1-$2-$3\/')
-    //       .replace(/\.md$/, '');
-    //   });
-    //   callback(null, routes);
-    // }
+    routes: callback => {
+      const { sourceFileArray } = require('./contents/json/summary.json');
+      const routes = sourceFileArray.map(sourceFileName => {
+        return sourceFileName.replace(/^contents\/(.*)\.(.*)\.md/, '\/$2/$1');
+      });
+      callback(null, routes);
+    }
   },
   /*
   ** Headers of the page
