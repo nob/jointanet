@@ -1,27 +1,105 @@
 <template>
   <section class="container">
-    <div>
-      <h1 class="title">
-        nuxt-test-1
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
-    </div>
+    <section id="message">
+        <div class="container">
+            <img id="radio-wave" src="~/assets/img/radio-wave.png">
+            <h1>{{ title }}</h1>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
+            <h1 class="text-center hidden-desktop">ジョインタネットのサービス</h1>
+            <!-- {{ entries:listing folder="services" }}
+            <section class="row featurette">
+            <div class="span6  {{ switch between="pull-left | pull-right" }}">
+                <img class="featurette-image illustration" src="~/assets/img/{{ image }}" alt="{{ title }}"></img>
+            </div>
+            <div class="span6">
+                <h2>{{ title }}<small><br>{{ sub-title }}</small></h2>
+                {{ content }}
+                {{ if back-url }}
+                <p class="text-right"><a class="btn btn-jointanet-2" href="{{ url }}">詳しく読む&nbsp;<i class="icon-forward icon-white"></i></a></p>
+                {{ endif }}
+            </div>
+            </section>
+            {{ if !last}}
+            <hr class="featurette-divider">
+            {{ endif }}
+            {{ /entries:listing }} -->
+        </div>
+    </section>
+    <section id="price">
+        <div class="container">
+            <h1 class="text-center hidden-desktop">料金</h1>
+            <section class="row featurette">
+              <div class="span8 offset2">
+              <!-- {{ pages:listing folder="price"}}
+                  <h2>{{ title }}</h2>
+                  {{ content|truncate:1214 }}
+                  <p class="text-right"><a class="btn btn-jointanet-2" href="{{ url }}">料金について詳しく&nbsp;<i class="icon-forward icon-white"></i></a></p>
+              {{ /pages:listing }} -->
+              </div>
+            </section>
+        </div>
+    </section>
+    <section id="works">
+        <div class="container">
+            <h1 class="text-center hidden-desktop">制作事例</h1>
+            <div class="row">
+                <ul class="thumbnails">
+                  <li class="span4">
+                    <a href="/works/ippuku" class="thumbnail">
+                      <img src="~/assets/img/ippuku-thumb.png" alt="">
+                    </a>
+                  </li>
+                  <li class="span4">
+                    <a href="/works/kioto" class="thumbnail">
+                      <img src="~/assets/img/kioto-thumb.png" alt="">
+                    </a>
+                  </li>
+                  <li class="span4">
+                    <a href="/works/bglen" class="thumbnail">
+                      <img src="~/assets/img/bglen-thumb.png" alt="">
+                    </a>
+                  </li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul class="thumbnails">
+                  <li class="span4">
+                    <a href="/works/zionus" class="thumbnail">
+                      <img src="~/assets/img/zionus-thumb.png" alt="">
+                    </a>
+                  </li>
+                  <li class="span4">
+                    <a href="/works/skfine" class="thumbnail">
+                      <img src="~/assets/img/skfine-thumb.png" alt="">
+                    </a>
+                  </li>
+                  <li class="span4 hidden-phone">
+                    <a class="thumbnail">
+                        <img src="~/assets/img/etc-thumb.png" alt="">
+                    </a>
+                  </li>
+                </ul>
+            </div>
+            <p>We also <strong>offer strong support for those looking for a multi-lingual presence in the international marketplace</strong>, whether you are a Japanese company looking to enter an overseas market or an overseas company looking to make a stand in the Japanese market.  <strong>Creating multilingual websites</strong> is one our strong points . </p>
+        </div>
+    </section>
   </section>
 </template>
 
 <script>
+import { sourceFileArray, fileMap } from '../../contents/json/summary.json';
+export default {
+  validate ({ params, store }) {
+    return sourceFileArray.includes(`contents/index.${params.locale}.md`);
+  },
+  asyncData ({ params, store}) {
+    return Object.assign({}, require(`~/contents/json/index.${params.locale}.json`), { params });
+  },
+};
+
 </script>
 
 <style>
