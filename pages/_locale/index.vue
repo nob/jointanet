@@ -11,7 +11,7 @@
             <h1 class="text-center hidden-desktop">ジョインタネットのサービス</h1>
             <section class="row featurette">
               <div class="span6 pull-left">
-                  <img class="featurette-image illustration" src="~/assets/img/service-1-l.png" alt="{{ sec1-title }}"></img>
+                  <img class="featurette-image illustration" src="~/assets/img/service-1-l.png" :alt="sec1-title"></img>
               </div>
               <div class="span6">
                   <h2>{{ sec1-title }}<small><br>{{ sec1-subtitle }}</small></h2>
@@ -22,7 +22,7 @@
             <hr class="featurette-divider">
             <section class="row featurette">
               <div class="span6 pull-right">
-                  <img class="featurette-image illustration" src="~/assets/img/service-2-l.png" alt="{{ sec2-title }}"></img>
+                  <img class="featurette-image illustration" src="~/assets/img/service-2-l.png" :alt="sec2-title"></img>
               </div>
               <div class="span6">
                   <h2>{{ sec2-title }}<small><br>{{ sec2-subtitle }}</small></h2>
@@ -33,7 +33,7 @@
             <hr class="featurette-divider">
             <section class="row featurette">
               <div class="span6 pull-left">
-                  <img class="featurette-image illustration" src="~/assets/img/service-3-l.png" alt="{{ sec3-title }}"></img>
+                  <img class="featurette-image illustration" src="~/assets/img/service-3-l.png" :alt="sec3-title"></img>
               </div>
               <div class="span6">
                   <h2>{{ sec3-title }}<small><br>{{ sec3-subtitle }}</small></h2>
@@ -44,7 +44,7 @@
             <hr class="featurette-divider">
             <section class="row featurette">
               <div class="span6 pull-right">
-                  <img class="featurette-image illustration" src="~/assets/img/service-4-l.png" alt="{{ sec4-title }}"></img>
+                  <img class="featurette-image illustration" src="~/assets/img/service-4-l.png" :alt="sec4-title"></img>
               </div>
               <div class="span6">
                   <h2>{{ sec4-title }}<small><br>{{ sec4-subtitle }}</small></h2>
