@@ -9,23 +9,49 @@
     <section id="services">
         <div class="container">
             <h1 class="text-center hidden-desktop">ジョインタネットのサービス</h1>
-            <!-- {{ entries:listing folder="services" }}
             <section class="row featurette">
-            <div class="span6  {{ switch between="pull-left | pull-right" }}">
-                <img class="featurette-image illustration" src="~/assets/img/{{ image }}" alt="{{ title }}"></img>
-            </div>
-            <div class="span6">
-                <h2>{{ title }}<small><br>{{ sub-title }}</small></h2>
-                {{ content }}
-                {{ if back-url }}
-                <p class="text-right"><a class="btn btn-jointanet-2" href="{{ url }}">詳しく読む&nbsp;<i class="icon-forward icon-white"></i></a></p>
-                {{ endif }}
-            </div>
+              <div class="span6 pull-left">
+                  <img class="featurette-image illustration" src="~/assets/img/service-1-l.png" alt="{{ sec1-title }}"></img>
+              </div>
+              <div class="span6">
+                  <h2>{{ sec1-title }}<small><br>{{ sec1-subtitle }}</small></h2>
+                  {{ sec1-desc }}
+                  <!-- <p class="text-right"><a class="btn btn-jointanet-2" href="{{ url }}">詳しく読む&nbsp;<i class="icon-forward icon-white"></i></a></p> -->
+              </div>
             </section>
-            {{ if !last}}
             <hr class="featurette-divider">
-            {{ endif }}
-            {{ /entries:listing }} -->
+            <section class="row featurette">
+              <div class="span6 pull-right">
+                  <img class="featurette-image illustration" src="~/assets/img/service-2-l.png" alt="{{ sec2-title }}"></img>
+              </div>
+              <div class="span6">
+                  <h2>{{ sec2-title }}<small><br>{{ sec2-subtitle }}</small></h2>
+                  {{ sec2-desc }}
+                  <!-- <p class="text-right"><a class="btn btn-jointanet-2" href="{{ url }}">詳しく読む&nbsp;<i class="icon-forward icon-white"></i></a></p> -->
+              </div>
+            </section>
+            <hr class="featurette-divider">
+            <section class="row featurette">
+              <div class="span6 pull-left">
+                  <img class="featurette-image illustration" src="~/assets/img/service-3-l.png" alt="{{ sec3-title }}"></img>
+              </div>
+              <div class="span6">
+                  <h2>{{ sec3-title }}<small><br>{{ sec3-subtitle }}</small></h2>
+                  {{ sec3-desc }}
+                  <!-- <p class="text-right"><a class="btn btn-jointanet-2" href="{{ url }}">詳しく読む&nbsp;<i class="icon-forward icon-white"></i></a></p> -->
+              </div>
+            </section>
+            <hr class="featurette-divider">
+            <section class="row featurette">
+              <div class="span6 pull-right">
+                  <img class="featurette-image illustration" src="~/assets/img/service-4-l.png" alt="{{ sec4-title }}"></img>
+              </div>
+              <div class="span6">
+                  <h2>{{ sec4-title }}<small><br>{{ sec4-subtitle }}</small></h2>
+                  {{ sec4-desc }}
+                  <!-- <p class="text-right"><a class="btn btn-jointanet-2" href="{{ url }}">詳しく読む&nbsp;<i class="icon-forward icon-white"></i></a></p> -->
+              </div>
+            </section>
         </div>
     </section>
     <section id="price">

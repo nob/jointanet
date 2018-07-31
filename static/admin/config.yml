@@ -107,19 +107,19 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Section1 title", name: "sec1-title", widget: "string"}
           - {label: "Section1 subtitle", name: "sec1-subtitle", widget: "string"}
-          - {label: "Section1 image", name: "sec1-image", widget: "image"}
+          - {label: "Section1 image", name: "sec1-image", widget: "image" required: false}
           - {label: "Section1 description", name: "sec1-desc", widget: "markdown"}
           - {label: "Section2 title", name: "sec2-title", widget: "string"}
           - {label: "Section2 subtitle", name: "sec2-subtitle", widget: "string"}
-          - {label: "Section2 image", name: "sec2-image", widget: "image"}
+          - {label: "Section2 image", name: "sec2-image", widget: "image" required: false}
           - {label: "Section2 description", name: "sec2-desc", widget: "markdown"}
           - {label: "Section3 title", name: "sec3-title", widget: "string"}
           - {label: "Section3 subtitle", name: "sec3-subtitle", widget: "string"}
-          - {label: "Section3 image", name: "sec3-image", widget: "image"}
+          - {label: "Section3 image", name: "sec3-image", widget: "image" required: false}
           - {label: "Section3 description", name: "sec3-desc", widget: "markdown"}
           - {label: "Section4 title", name: "sec4-title", widget: "string"}
           - {label: "Section4 subtitle", name: "sec4-subtitle", widget: "string"}
-          - {label: "Section4 image", name: "sec4-image", widget: "image"}
+          - {label: "Section4 image", name: "sec4-image", widget: "image" required: false}
           - {label: "Section4 description", name: "sec4-desc", widget: "markdown"}
 
       - label: "Index(Japanese)"
@@ -129,19 +129,19 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Section1 title", name: "sec1-title", widget: "string"}
           - {label: "Section1 subtitle", name: "sec1-subtitle", widget: "string"}
-          - {label: "Section1 image", name: "sec1-image", widget: "image"}
+          - {label: "Section1 image", name: "sec1-image", widget: "image" required: false}
           - {label: "Section1 description", name: "sec1-desc", widget: "text"}
           - {label: "Section2 title", name: "sec2-title", widget: "string"}
           - {label: "Section2 subtitle", name: "sec2-subtitle", widget: "string"}
-          - {label: "Section2 image", name: "sec2-image", widget: "image"}
+          - {label: "Section2 image", name: "sec2-image", widget: "image" required: false}
           - {label: "Section2 description", name: "sec2-desc", widget: "markdown"}
           - {label: "Section3 title", name: "sec3-title", widget: "string"}
           - {label: "Section3 subtitle", name: "sec3-subtitle", widget: "string"}
-          - {label: "Section3 image", name: "sec3-image", widget: "image"}
+          - {label: "Section3 image", name: "sec3-image", widget: "image" required: false}
           - {label: "Section3 description", name: "sec3-desc", widget: "markdown"}
           - {label: "Section4 title", name: "sec4-title", widget: "string"}
           - {label: "Section4 subtitle", name: "sec4-subtitle", widget: "string"}
-          - {label: "Section4 image", name: "sec4-image", widget: "image"}
+          - {label: "Section4 image", name: "sec4-image", widget: "image" required: false}
           - {label: "Section4 description", name: "sec4-desc", widget: "markdown"}
 
       - label: "Price(English)"
