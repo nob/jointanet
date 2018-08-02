@@ -80,6 +80,7 @@ collections: # A list of collections the CMS should be able to edit
     format: 'frontmatter'
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Sub Title", name: "subtitle", widget: "string", reuquired: false}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Fearured Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
@@ -93,6 +94,7 @@ collections: # A list of collections the CMS should be able to edit
     format: 'frontmatter'
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Sub Title", name: "subtitle", widget: "string", reuquired: false}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Fearured Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
@@ -105,44 +107,44 @@ collections: # A list of collections the CMS should be able to edit
         file: "contents/index.en.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Section1 title", name: "sec1-title", widget: "string"}
-          - {label: "Section1 subtitle", name: "sec1-subtitle", widget: "string", required: false}
-          - {label: "Section1 image", name: "sec1-image", widget: "image", required: false}
-          - {label: "Section1 description", name: "sec1-desc", widget: "markdown"}
-          - {label: "Section2 title", name: "sec2-title", widget: "string"}
-          - {label: "Section2 subtitle", name: "sec2-subtitle", widget: "string", required: false}
-          - {label: "Section2 image", name: "sec2-image", widget: "image", required: false}
-          - {label: "Section2 description", name: "sec2-desc", widget: "markdown"}
-          - {label: "Section3 title", name: "sec3-title", widget: "string"}
-          - {label: "Section3 subtitle", name: "sec3-subtitle", widget: "string", required: false}
-          - {label: "Section3 image", name: "sec3-image", widget: "image", required: false}
-          - {label: "Section3 description", name: "sec3-desc", widget: "markdown"}
-          - {label: "Section4 title", name: "sec4-title", widget: "string"}
-          - {label: "Section4 subtitle", name: "sec4-subtitle", widget: "string", required: false}
-          - {label: "Section4 image", name: "sec4-image", widget: "image", required: false}
-          - {label: "Section4 description", name: "sec4-desc", widget: "markdown"}
+          # - {label: "Section1 title", name: "sec1Title", widget: "string"}
+          # - {label: "Section1 subtitle", name: "sec1Subtitle", widget: "string", required: false}
+          # - {label: "Section1 image", name: "sec1Image", widget: "image", required: false}
+          # - {label: "Section1 description", name: "sec1Desc", widget: "markdown"}
+          # - {label: "Section2 title", name: "sec2Title", widget: "string"}
+          # - {label: "Section2 subtitle", name: "sec2Subtitle", widget: "string", required: false}
+          # - {label: "Section2 image", name: "sec2Image", widget: "image", required: false}
+          # - {label: "Section2 description", name: "sec2Desc", widget: "markdown"}
+          # - {label: "Section3 title", name: "sec3Title", widget: "string"}
+          # - {label: "Section3 subtitle", name: "sec3Subtitle", widget: "string", required: false}
+          # - {label: "Section3 image", name: "sec3Image", widget: "image", required: false}
+          # - {label: "Section3 description", name: "sec3Desc", widget: "markdown"}
+          # - {label: "Section4 title", name: "sec4Title", widget: "string"}
+          # - {label: "Section4 subtitle", name: "sec4Subtitle", widget: "string", required: false}
+          # - {label: "Section4 image", name: "sec4Image", widget: "image", required: false}
+          # - {label: "Section4 description", name: "sec4Desc", widget: "markdown"}
 
       - label: "Index(Japanese)"
         name: "index_ja"
         file: "contents/index.ja.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Section1 title", name: "sec1-title", widget: "string"}
-          - {label: "Section1 subtitle", name: "sec1-subtitle", widget: "string", required: false}
-          - {label: "Section1 image", name: "sec1-image", widget: "image", required: false}
-          - {label: "Section1 description", name: "sec1-desc", widget: "text"}
-          - {label: "Section2 title", name: "sec2-title", widget: "string"}
-          - {label: "Section2 subtitle", name: "sec2-subtitle", widget: "string", required: false}
-          - {label: "Section2 image", name: "sec2-image", widget: "image", required: false}
-          - {label: "Section2 description", name: "sec2-desc", widget: "markdown"}
-          - {label: "Section3 title", name: "sec3-title", widget: "string"}
-          - {label: "Section3 subtitle", name: "sec3-subtitle", widget: "string", required: false}
-          - {label: "Section3 image", name: "sec3-image", widget: "image", required: false}
-          - {label: "Section3 description", name: "sec3-desc", widget: "markdown"}
-          - {label: "Section4 title", name: "sec4-title", widget: "string"}
-          - {label: "Section4 subtitle", name: "sec4-subtitle", widget: "string", required: false}
-          - {label: "Section4 image", name: "sec4-image", widget: "image", required: false}
-          - {label: "Section4 description", name: "sec4-desc", widget: "markdown"}
+          # - {label: "Section1 title", name: "sec1Title", widget: "string"}
+          # - {label: "Section1 subtitle", name: "sec1Subtitle", widget: "string", required: false}
+          # - {label: "Section1 image", name: "sec1Image", widget: "image", required: false}
+          # - {label: "Section1 description", name: "sec1Desc", widget: "text"}
+          # - {label: "Section2 title", name: "sec2Title", widget: "string"}
+          # - {label: "Section2 subtitle", name: "sec2Subtitle", widget: "string", required: false}
+          # - {label: "Section2 image", name: "sec2Image", widget: "image", required: false}
+          # - {label: "Section2 description", name: "sec2Desc", widget: "markdown"}
+          # - {label: "Section3 title", name: "sec3Title", widget: "string"}
+          # - {label: "Section3 subtitle", name: "sec3Subtitle", widget: "string", required: false}
+          # - {label: "Section3 image", name: "sec3Image", widget: "image", required: false}
+          # - {label: "Section3 description", name: "sec3Desc", widget: "markdown"}
+          # - {label: "Section4 title", name: "sec4Title", widget: "string"}
+          # - {label: "Section4 subtitle", name: "sec4Subtitle", widget: "string", required: false}
+          # - {label: "Section4 image", name: "sec4Image", widget: "image", required: false}
+          # - {label: "Section4 description", name: "sec4Desc", widget: "markdown"}
 
       - label: "Price(English)"
         name: "price_en"

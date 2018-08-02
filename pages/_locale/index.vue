@@ -7,51 +7,19 @@
         </div>
     </section>
     <section id="services">
-        <div class="container">
+        <div class="container" v-for="(s, index) of services" :key="index">
             <h1 class="text-center hidden-desktop">ジョインタネットのサービス</h1>
             <section class="row featurette">
               <div class="span6 pull-left">
-                  <img class="featurette-image illustration" src="~/assets/img/service-1-l.png" :alt="sec1-title"></img>
+                  <img class="featurette-image illustration" src="~/assets/img/service-1-l.png" :alt="title"/>
               </div>
               <div class="span6">
-                  <h2>{{ sec1-title }}<small><br>{{ sec1-subtitle }}</small></h2>
-                  {{ sec1-desc }}
+                  <h2>{{ s.title }}<small><br>{{ s.subtitle }}</small></h2>
+                  <div v-html="s.bodyHtml"></div>
                   <!-- <p class="text-right"><a class="btn btn-jointanet-2" href="{{ url }}">詳しく読む&nbsp;<i class="icon-forward icon-white"></i></a></p> -->
               </div>
             </section>
             <hr class="featurette-divider">
-            <section class="row featurette">
-              <div class="span6 pull-right">
-                  <img class="featurette-image illustration" src="~/assets/img/service-2-l.png" :alt="sec2-title"></img>
-              </div>
-              <div class="span6">
-                  <h2>{{ sec2-title }}<small><br>{{ sec2-subtitle }}</small></h2>
-                  {{ sec2-desc }}
-                  <!-- <p class="text-right"><a class="btn btn-jointanet-2" href="{{ url }}">詳しく読む&nbsp;<i class="icon-forward icon-white"></i></a></p> -->
-              </div>
-            </section>
-            <hr class="featurette-divider">
-            <section class="row featurette">
-              <div class="span6 pull-left">
-                  <img class="featurette-image illustration" src="~/assets/img/service-3-l.png" :alt="sec3-title"></img>
-              </div>
-              <div class="span6">
-                  <h2>{{ sec3-title }}<small><br>{{ sec3-subtitle }}</small></h2>
-                  {{ sec3-desc }}
-                  <!-- <p class="text-right"><a class="btn btn-jointanet-2" href="{{ url }}">詳しく読む&nbsp;<i class="icon-forward icon-white"></i></a></p> -->
-              </div>
-            </section>
-            <hr class="featurette-divider">
-            <section class="row featurette">
-              <div class="span6 pull-right">
-                  <img class="featurette-image illustration" src="~/assets/img/service-4-l.png" :alt="sec4-title"></img>
-              </div>
-              <div class="span6">
-                  <h2>{{ sec4-title }}<small><br>{{ sec4-subtitle }}</small></h2>
-                  {{ sec4-desc }}
-                  <!-- <p class="text-right"><a class="btn btn-jointanet-2" href="{{ url }}">詳しく読む&nbsp;<i class="icon-forward icon-white"></i></a></p> -->
-              </div>
-            </section>
         </div>
     </section>
     <section id="price">
@@ -59,11 +27,9 @@
             <h1 class="text-center hidden-desktop">料金</h1>
             <section class="row featurette">
               <div class="span8 offset2">
-              <!-- {{ pages:listing folder="price"}}
-                  <h2>{{ title }}</h2>
-                  {{ content|truncate:1214 }}
-                  <p class="text-right"><a class="btn btn-jointanet-2" href="{{ url }}">料金について詳しく&nbsp;<i class="icon-forward icon-white"></i></a></p>
-              {{ /pages:listing }} -->
+                  <h2>{{ price.title }}</h2>
+                  <div v-html="price.preview"></div>
+                  <p class="text-right"><a class="btn btn-jointanet-2" :href="url">料金について詳しく&nbsp;<i class="icon-forward icon-white"></i></a></p>
               </div>
             </section>
         </div>
@@ -122,7 +88,17 @@ export default {
     return sourceFileArray.includes(`contents/index.${params.locale}.md`);
   },
   asyncData ({ params, store}) {
-    return Object.assign({}, require(`~/contents/json/index.${params.locale}.json`), { params });
+    const index = require(`~/contents/json/index.${params.locale}.json`);
+    const price = require(`~/contents/json/price.${params.locale}.json`);
+    const services = [
+      require(`~/contents/json/services/production.${params.locale}.json`),
+      require(`~/contents/json/services/operation.${params.locale}.json`),
+      require(`~/contents/json/services/analysis.${params.locale}.json`),
+      require(`~/contents/json/services/facebook.${params.locale}.json`),
+    ];
+    const objtmp = Object.assign({}, index, { price }, { services }, { params });
+    // console.log(objtmp);
+    return objtmp;
   },
 };
 

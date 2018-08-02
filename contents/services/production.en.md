@@ -1,6 +1,6 @@
 ---
 title: Website Planning and Production
-sub-title: for PC, Tablet and Mobile
+subtitle: for PC, Tablet and Mobile
 image: service-1-l.png
 ---
 We strive to provide the closest thing to a **"real" experience** of what your business is about. We will work hard to make sure your website visitors feel like they are getting an **in store/office experience**. We promise to make every effort to **fully grasp your message and style in order to create a website** that brings your dream to life. These ideas are what make up JOINTANET's philosophy and approach to work. </p>
