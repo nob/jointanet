@@ -3,7 +3,7 @@
       <div class="container">
           <div class="row">
   	        <div class="span8 offset2">
-              <h1 class="text-center">{{ title }}</h1>
+              <h1 class="text-center">{{ title }}<small><br>{{ subtitle }}</small></h1>
               <div v-html="bodyHtml"></div>
   	        </div>
           </div>

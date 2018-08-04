@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <div>
     <section id="message">
         <div class="container">
             <img id="radio-wave" src="~/assets/img/radio-wave.png">
@@ -27,9 +27,9 @@
             <h1 class="text-center hidden-desktop">料金</h1>
             <section class="row featurette">
               <div class="span8 offset2">
-                  <h2>{{ price.title }}</h2>
-                  <div v-html="price.preview"></div>
-                  <p class="text-right"><a class="btn btn-jointanet-2" :href="url">料金について詳しく&nbsp;<i class="icon-forward icon-white"></i></a></p>
+                  <h2>{{ price.title }}<small><br>{{ price.subtitle }}</small></h2>
+                  <div v-html="price.bodyHtml.substring(0, 550) + '…'"></div>
+                  <p class="text-right"><a class="btn btn-jointanet-2" :href="`/${params.locale}/price`">料金について詳しく&nbsp;<i class="icon-forward icon-white"></i></a></p>
               </div>
             </section>
         </div>
@@ -78,7 +78,7 @@
             <p>We also <strong>offer strong support for those looking for a multi-lingual presence in the international marketplace</strong>, whether you are a Japanese company looking to enter an overseas market or an overseas company looking to make a stand in the Japanese market.  <strong>Creating multilingual websites</strong> is one our strong points . </p>
         </div>
     </section>
-  </section>
+  </div>
 </template>
 
 <script>
