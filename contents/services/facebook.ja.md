@@ -1,5 +1,6 @@
 ---
-title: FacebookやInstagram等のSNSとの連携 
+title: FacebookやInstagram等のSNSとの連携
+date: 2018-08-05T06:21:25.358Z
 image: service-4.png
 ---
 
@@ -7,4 +8,4 @@ image: service-4.png
 
 ジョインタネットは常に変わりゆくFacebookの動向を追いながら、あなたのFacebookページとあなたのウェブサイトを**効果的に連携して活用**する方法をご提案していきます。
 <br/><br/>
-[あなたのビジネスがfacebookページだけではなく、独自のウェブサイトを持つ価値](/articles/facebook)
+[あなたのビジネスがfacebookページだけではなく、独自のウェブサイトを持つ価値](/ja/articles/facebook)
