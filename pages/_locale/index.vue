@@ -96,9 +96,7 @@ export default {
       require(`~/contents/json/services/analysis.${params.locale}.json`),
       require(`~/contents/json/services/facebook.${params.locale}.json`),
     ];
-    const objtmp = Object.assign({}, index, { price }, { services }, { params });
-    // console.log(objtmp);
-    return objtmp;
+    return Object.assign({}, index, { price }, { services }, { params });
   },
 };
 
