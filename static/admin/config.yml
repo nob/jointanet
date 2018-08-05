@@ -107,12 +107,13 @@ collections: # A list of collections the CMS should be able to edit
         file: "contents/index.en.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-
+          - {label: "Body", name: "body", widget: "markdown"}
       - label: "Index(Japanese)"
         name: "index_ja"
         file: "contents/index.ja.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
 
       - label: "Price(English)"
         name: "price_en"
