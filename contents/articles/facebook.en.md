@@ -1,7 +1,8 @@
 ---
 title: A Facebook Page for your Business may be Helpful but is it Really Enough?
+date: 2018-08-05T07:10:48.660Z
 image: service-4-l.png
-back-url: /#service
+back-url: '/#service'
 ---
 
 Creating a Facebook page under your business's name is like renting a space/booth for free at the world's largest event being held by a company known across the world. Moreover this event is open to the public 24 hours a day and 365 days a year. Although percentages vary with age and place, this gathering spot boasts participants of about 25 million people in Japan and over 1.79 billion people worldwide who come to meet, chat, discover and share.
@@ -23,7 +24,7 @@ Besides having this space/booth on Facebook, it is essential for you to create a
 <br/><br/>
 ###The Limits of Expression on Facebook
 As you may well know, a Facebook business page will look a lot like what you see below:
-![Facebook page](~/assets/img/fbpage.png)
+![Facebook page](/img/fbpage.png)
 
 The upper heading is always the familiar Facebook logo and blue color. Below that is a Facebook determined one-size-fits-all space for a banner graphic/photo. The background is light blue in color and on the right you will find ads and products from other companies. On such a standardized type of page with limited ways to express your message, is it really possible to show your originality and draw people to your business, product or service? 　
 
