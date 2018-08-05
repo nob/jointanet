@@ -1,6 +1,7 @@
 ---
-address: 
-tel:
-business:
-repname: 
+address: 〒140-0011 東京都 品川区東大井 3-7-2-216
+tel: 090−8382-5207
+business: インターネット/ウェブ システムデザイン、制作、コンサルティング
+repname: 山辺 登
 ---
+
