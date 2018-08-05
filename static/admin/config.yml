@@ -11,8 +11,8 @@ media_folder: "static/img" # Media files will be stored in the repo under static
 public_folder: "/img" # The src attribute for uploaded media will begin with /images/uploads
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "article_en" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Article(English)" # Used in the UI, ie.: "New Post"
+  - name: "articles_en" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Articles(English)" # Used in the UI, ie.: "New Post"
     folder: "contents/articles" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -25,8 +25,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Back URL", name: "back-url", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
-  - name: "article_ja"
-    label: "Article(Japanese)"
+  - name: "articles_ja"
+    label: "Articles(Japanese)"
     folder: "contents/articles"
     create: true
     slug: "{{slug}}"
@@ -39,8 +39,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Back URL", name: "back-url", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
-  - name: "work_en"
-    label: "Work(English)"
+  - name: "works_en"
+    label: "Works(English)"
     folder: "contents/works"
     create: true
     slug: "{{slug}}"
@@ -55,8 +55,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Back URL", name: "back-url", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
-  - name: "work_ja"
-    label: "Work(Japnese)"
+  - name: "works_ja"
+    label: "Works(Japnese)"
     folder: "contents/works"
     create: true
     slug: "{{slug}}"
@@ -71,7 +71,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Back URL", name: "back-url", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
-  - name: "service_en"
+  - name: "services_en"
     label: "Services(English)"
     folder: "contents/services"
     create: true
@@ -85,7 +85,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Fearured Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
-  - name: "service_ja"
+  - name: "services_ja"
     label: "Services(Japanese)"
     folder: "contents/services"
     create: true
@@ -99,8 +99,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Fearured Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
-  - name: "page"
-    label: "Page"
+  - name: "pages"
+    label: "Pages"
     files:
       - label: "Index(English)"
         name: "index_en"
@@ -129,3 +129,62 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Back URL", name: "back-url", widget: "string", required: false}
           - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "site_parts"
+    label: "Site Parts"
+    files:
+      - label: "Company Info(English)"
+        name: "company_en"
+        file: "contents/company.en.md"
+        fields:
+          - {label: "Address", name: "address", widget: "string"}
+          - {label: "Tel", name: "tel", widget: "string"}
+          - {label: "Business Detail", name: "business", widget: "string"}
+          - {label: "Rep. Name", name: "repname", widget: "string"}
+
+      - label: "Company Info(Japanese)"
+        name: "company_ja"
+        file: "contents/company.ja.md"
+        fields:
+          - {label: "Address", name: "address", widget: "string"}
+          - {label: "Tel", name: "tel", widget: "string"}
+          - {label: "Business Detail", name: "business", widget: "string"}
+          - {label: "Rep. Name", name: "repname", widget: "string"}
+
+      - label: "Navigation(English)"
+        name: "navigation_en"
+        file: "contents/navigation.en.md"
+        fields:
+          - {label: "Section1", name: "sec1", widget: "string"}
+          - {label: "Section2", name: "sec2", widget: "string"}
+          - {label: "Section3", name: "sec3", widget: "string"}
+
+      - label: "Navigation(Japanese)"
+        name: "navigation_ja"
+        file: "contents/navigation.ja.md"
+        fields:
+          - {label: "Section1", name: "sec1", widget: "string"}
+          - {label: "Section2", name: "sec2", widget: "string"}
+          - {label: "Section3", name: "sec3", widget: "string"}
+
+      - label: "Contact Form(English)"
+        name: "contact_en"
+        file: "contents/contact_form.en.md"
+        fields:
+          - {label: "Step1 message", name: "step1-msg", widget: "string"}
+          - {label: "Step1 sub message", name: "step1-sub-msg", widget: "string"}
+          - {label: "Step1 button label", name: "step1-btn-label", widget: "string"}
+          - {label: "Step2 message", name: "step2-msg", widget: "string"}
+          - {label: "Step2 sub message", name: "step2-sub-msg", widget: "string"}
+          - {label: "Step2 button label", name: "step2-btn-label", widget: "string"}
+
+      - label: "Contact Form(Japanese)"
+        name: "contact_ja"
+        file: "contents/contact_form.ja.md"
+        fields:
+          - {label: "Step1 message", name: "step1-msg", widget: "string"}
+          - {label: "Step1 sub message", name: "step1-sub-msg", widget: "string"}
+          - {label: "Step1 button label", name: "step1-btn-label", widget: "string"}
+          - {label: "Step2 message", name: "step2-msg", widget: "string"}
+          - {label: "Step2 sub message", name: "step2-sub-msg", widget: "string"}
+          - {label: "Step2 button label", name: "step2-btn-label", widget: "string"}
