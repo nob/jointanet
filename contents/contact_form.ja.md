@@ -1,8 +1,9 @@
 ---
-step1-msg:
-step1-sub-msg:
-step1-btn-label:
-step2-msg:
-step2-sub-msg:
-step2-btn-label:
+step1-msg: 以下の入力フォームから、いつでもお気軽にご相談、ご質問等お問い合わせ下さい。
+step1-sub-msg: 48時間以内にこちらからご連絡させて頂きます。
+step1-btn-label: 次へ
+step2-msg: 以下の入力フォームから、いつでもお気軽にご相談、ご質問等お問い合わせ下さい。
+step2-sub-msg: 48時間以内にこちらからご連絡させて頂きます。
+step2-btn-label: 次へ
 ---
+
