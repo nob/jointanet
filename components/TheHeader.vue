@@ -5,13 +5,11 @@
       <div class="container clearfix">
           <a class="logo" href="/"><img src="~/assets/img/logo-l.png" alt="Jointanet"></a>
           <ul class="nav visible-desktop clearfix">
-              <!-- <li class="text-center {{if segment_1 === 'services'}}active{{ endif }}"><a href="{{ if current_path !== '/' }}/{{ endif}}#services"><strong>Services</strong></a></li>
-              <li class="text-center {{if segment_1 === 'price'}}active{{ endif }}"><a href="{{ if current_path !== '/' }}/{{ endif}}#price"><strong>Fees</strong></a></li>
-              <li class="text-center {{if segment_1 === 'works'}}active{{ endif }}"><a href="{{ if current_path !== '/' }}/{{ endif}}#works"><strong>Works</strong></a></li> -->
+              <li class="text-center active"><a href="#services"><strong>Services</strong></a></li>
+              <li class="text-center active"><a href="#price"><strong>Fees</strong></a></li>
+              <li class="text-center active"><a href="#works"><strong>Works</strong></a></li>
           </ul>
-          <!-- {{ if current_path !== '/' }} -->
-          <!-- <a id="btn-back-to-home" class="btn btn-inverse pull-left hidden-desktop" href="{{ back-url }}" type="button"><i class="icon-chevron-left icon-white"></i>&nbsp;戻る</a> -->
-          <!-- {{ endif }} -->
+          <a v-if="this.$route.path !== 'en'" id="btn-back-to-home" class="btn btn-inverse pull-left hidden-desktop" href="" type="button"><i class="icon-chevron-left icon-white"></i>&nbsp;戻る</a>
       </div>
   </header>
 </template>
