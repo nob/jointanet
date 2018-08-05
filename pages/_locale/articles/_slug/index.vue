@@ -1,16 +1,18 @@
 <template>
-  <section>
-    <h1>
-      {{ title }} {{params.locale}}
-    </h1>
-    <hr>
-    <div class="">
-      <p class="ml-3">
-        <b>{{ params.slug }}</b>
-      </p>
-      <div class="article-body" v-html="bodyHtml">
+  <section id="details">
+      <div class="container">
+          <div class="row">
+              <div class="span8 offset2">
+                  <h1 class="text-center">{{ title }}<small><br>{{ subtitle }}</small></h1>
+                  <div class="row">
+                      <div class="span6 offset1">
+                          <img class="illustration" :src="`/img/${image}`" :alt="title"/>
+                      </div>
+                  </div>
+                  <div v-html="bodyHtml"></div>
+              </div>
+          </div>
       </div>
-    </div>
   </section>
 </template>
 <script>
@@ -23,26 +25,5 @@ export default {
   asyncData ({ params, store}) {
     return Object.assign({}, require(`~/contents/json/articles/${params.slug}.${params.locale}.json`), { params });
   },
-  // head() {
-  //   const title = `${this.title} - SUSTINA`;
-  //   const url = `https://sustina.co/news/${this.params.date}/${this.params.slug}/`;
-  //   return {
-  //     title: title,
-  //     meta: [
-  //       { hid: 'og:url', property: 'og:url', content: url },
-  //       { hid: 'og:title', property: 'og:title', content: title },
-  //     ],
-  //     link: [{ rel: 'canonical', href: url }],
-  //   };
-  // },
 };
 </script>
-<style lang="stylus" scoped>
-h1
-  font-size: 15px
-  font-weight: 700
-
-.article-body
-  h2
-    font-size: 13px
-</style>
