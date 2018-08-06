@@ -22,7 +22,7 @@
                   <form id="inquiry" action="/backend/inquiry" method="post" accept-charset="utf-8" class="carousel-inner">
                       <div id="inquiry-1" class="active item">
                           <h5>{{ contact.step1_msg }}</h5>
-                          <p><small>{{ contact.step1_sub_msg }}/small></p>
+                          <p><small>{{ contact.step1_sub_msg }}</small></p>
                           <textarea name="inquiry-msg" required="required" maxlength="20000" rows="7" :placeholder="contact.step1_txt_placeholder"></textarea>
                           <div class="btns clearfix">
                               <a id="btn-inquiry-next" class="btn btn-large btn-danger pull-right" type="button">{{ contact.step1_btn_label}}&nbsp;<i class="icon-chevron-right icon-white"></i></a>
