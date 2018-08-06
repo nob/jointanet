@@ -75,7 +75,7 @@
                   </li>
                 </ul>
             </div>
-            <p>We also <strong>offer strong support for those looking for a multi-lingual presence in the international marketplace</strong>, whether you are a Japanese company looking to enter an overseas market or an overseas company looking to make a stand in the Japanese market.  <strong>Creating multilingual websites</strong> is one our strong points . </p>
+            <div v-html="bodyHtml"></div>
         </div>
     </section>
   </div>
