@@ -10,14 +10,15 @@ module.exports = {
       const routes = sourceFileArray.filter(sourceFileName => {
         return /^contents\/site_parts/i.test(sourceFileName) ? false : true;
       }).map(sourceFileName => {
-        return sourceFileName.replace(/^contents\/(.*)\.(.*)\.md/i, '\/$2/$1').replace(/index$/, '');
+        return sourceFileName.replace(/^contents\/(.*)\.(.*)\.md/i, '\/$2/$1').replace(/index$/i, '');
       });
       callback(null, routes);
     }
   },
-  /*
-  ** Headers of the page
-  */
+
+  /**
+   * Headers of the page
+   */
   head: {
     title: 'nuxt-test-1',
     meta: [
@@ -53,16 +54,18 @@ module.exports = {
     '@/assets/css/bootstrap-responsive.css',
     '@/assets/css/main.css',
   ],
-  /*stomize the progress bar color
-  */
+  /**
+   * stomize the progress bar color
+   */
   loading: { color: '#3B8070' },
-  /*
-  ** Build configuration
-  */
+
+  /**
+   * Build configuration
+   */
   build: {
-    /*
-    ** Run ESLint on save
-    */
+    /**
+     * Run ESLint on save
+     */
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
