@@ -21,34 +21,34 @@
               <div id="myCarousel" class="carousel slide span6">
                   <form id="inquiry" action="/backend/inquiry" method="post" accept-charset="utf-8" class="carousel-inner">
                       <div id="inquiry-1" class="active item">
-                          <h5>Please feel free to contact us with questions or inquiries by using the following form.</h5>
-                          <p><small>We will get back to you within 48 hours.</small></p>
-                          <textarea name="inquiry-msg" required="required" maxlength="20000" rows="7" placeholder="ご相談/ご質問内容: あなたが既にお持ちのウェブサイトについて、　新しく制作したいウェブサイトについて、等…"></textarea>
+                          <h5>{{ contact.step1_msg }}</h5>
+                          <p><small>{{ contact.step1_sub_msg }}/small></p>
+                          <textarea name="inquiry-msg" required="required" maxlength="20000" rows="7" :placeholder="contact.step1_txt_placeholder"></textarea>
                           <div class="btns clearfix">
-                              <a id="btn-inquiry-next" class="btn btn-large btn-danger pull-right" type="button">次へ&nbsp;<i class="icon-chevron-right icon-white"></i></a>
+                              <a id="btn-inquiry-next" class="btn btn-large btn-danger pull-right" type="button">{{ contact.step1_btn_label}}&nbsp;<i class="icon-chevron-right icon-white"></i></a>
                           </div>
                       </div>
                       <div id="inquiry-2" class="item">
-                          <h5>Please give us your name and contact info</h5>
-                          <p><small>This information will not be shared with or supplied to any third party.</small></p>
+                          <h5>{{ contact.step2_msg }}</h5>
+                          <p><small>{{ contact.step2_sub_msg }}</small></p>
                           <div>
-                              <label for="name">お名前</label><input type="text" name="name" required="required" value="" placeholder="">
+                              <label for="name">{{ contact.step2_name_label }}</label><input type="text" name="name" required="required" value="" placeholder="">
                           </div>
                           <div>
-                              <label for="email">Eメールアドレス</label><input type="email" name="email" required="required" value="" placeholder="name@your-domain.com">
+                              <label for="email">{{ contact.step2_email_label }}</label><input type="email" name="email" required="required" value="" placeholder="name@your-domain.com">
                           </div>
                           <div>
-                              <label for="url">ウェブサイトアドレス(もし既にお持ちであれば)</label><input type="url" name="url" value="" placeholder="http://www.your-domain.com">
+                              <label for="url">{{ contact.step2_url_label }}</label><input type="url" name="url" value="" placeholder="http://www.your-domain.com">
                           </div>
                           <div class="btns clearfix">
-                              <a id="btn-inquiry-back" class="btn btn-inverse pull-left" type="button" data-slide="prev"><i class="icon-chevron-left icon-white"></i>&nbsp;戻る</a>
-                              <button id="btn-inquiry-submit" class="btn btn-large btn-jointanet-1 pull-right" type="submit">送信&nbsp;<i class=" icon-ok icon-white"></i></button>
-                              <img id="loading" class="pull-right" src="~/assets/img/waiting.gif" alt="sending...">
+                              <a id="btn-inquiry-back" class="btn btn-inverse pull-left" type="button" data-slide="prev"><i class="icon-chevron-left icon-white"></i>&nbsp;{{ contact.step2_back_btn_label }}</a>
+                              <button id="btn-inquiry-submit" class="btn btn-large btn-jointanet-1 pull-right" type="submit">{{ contact.step2_btn_label }}&nbsp;<i class=" icon-ok icon-white"></i></button>
+                              <img id="loading" class="pull-right" src="~/assets/img/waiting.gif" :alt="contact.step2_loading_msg">
                           </div>
                       </div>
                       <div id="inquiry-3" class="item">
-                          <h3>お問い合わせありがとうございました。</h3>
-                          <p><small>48時間以内にこちらからご連絡させて頂きます。</small></p>
+                          <h3>{{ contact.step3_msg }}</h3>
+                          <p><small>{{ contact.step3_sub_msg }}</small></p>
                       </div>
                   </form>
               </div>
