@@ -136,7 +136,7 @@ collections: # A list of collections the CMS should be able to edit
     files:
       - label: "Company Info(English)"
         name: "company_en"
-        file: "contents/company.en.md"
+        file: "contents/site_parts/company.en.md"
         fields:
           - {label: "Address", name: "address", widget: "string"}
           - {label: "Tel", name: "tel", widget: "string"}
@@ -145,7 +145,7 @@ collections: # A list of collections the CMS should be able to edit
 
       - label: "Company Info(Japanese)"
         name: "company_ja"
-        file: "contents/company.ja.md"
+        file: "contents/site_parts/company.ja.md"
         fields:
           - {label: "Address", name: "address", widget: "string"}
           - {label: "Tel", name: "tel", widget: "string"}
@@ -154,7 +154,7 @@ collections: # A list of collections the CMS should be able to edit
 
       - label: "Navigation(English)"
         name: "navigation_en"
-        file: "contents/navigation.en.md"
+        file: "contents/site_parts/navigation.en.md"
         fields:
           - {label: "Section1", name: "sec1", widget: "string"}
           - {label: "Section2", name: "sec2", widget: "string"}
@@ -162,7 +162,7 @@ collections: # A list of collections the CMS should be able to edit
 
       - label: "Navigation(Japanese)"
         name: "navigation_ja"
-        file: "contents/navigation.ja.md"
+        file: "contents/site_parts/navigation.ja.md"
         fields:
           - {label: "Section1", name: "sec1", widget: "string"}
           - {label: "Section2", name: "sec2", widget: "string"}
@@ -170,7 +170,7 @@ collections: # A list of collections the CMS should be able to edit
 
       - label: "Contact Form(English)"
         name: "contact_en"
-        file: "contents/contact_form.en.md"
+        file: "contents/site_parts/contact_form.en.md"
         fields:
           - {label: "Step1 message", name: "step1-msg", widget: "string"}
           - {label: "Step1 sub message", name: "step1-sub-msg", widget: "string"}
@@ -181,7 +181,7 @@ collections: # A list of collections the CMS should be able to edit
 
       - label: "Contact Form(Japanese)"
         name: "contact_ja"
-        file: "contents/contact_form.ja.md"
+        file: "contents/site_parts/contact_form.ja.md"
         fields:
           - {label: "Step1 message", name: "step1-msg", widget: "string"}
           - {label: "Step1 sub message", name: "step1-sub-msg", widget: "string"}

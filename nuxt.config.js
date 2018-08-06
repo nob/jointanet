@@ -1,5 +1,5 @@
 module.exports = {
-  mode: 'spa',
+  mode: 'universal',
   devtools: true,
   env: {
   },
@@ -7,7 +7,9 @@ module.exports = {
   generate: {
     routes: callback => {
       const { sourceFileArray } = require('./contents/json/summary.json');
-      const routes = sourceFileArray.map(sourceFileName => {
+      const routes = sourceFileArray.filter(sourceFileName => {
+        /^contents/site_parts/.test(sourceFileName) ? false : true;
+      }).map(sourceFileName => {
         return sourceFileName.replace(/^contents\/(.*)\.(.*)\.md/, '\/$2/$1').replace(/index$/, '');
       });
       callback(null, routes);
