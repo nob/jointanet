@@ -8,7 +8,7 @@ export const mutations = {
 	setNavi (state, navi) {
 		state.navi = navi
 	},
-	setCompany (state, compny) {
+	setCompany (state, company) {
 		state.company = company
 	},
 	setContact (state, contact) {
@@ -20,6 +20,8 @@ export const actions = {
 	nuxtServerInit ({ commit }, { params }) {
     if (params.locale !== undefined) {
   	   commit('setNavi', require(`~/contents/json/site_parts/navigation.${params.locale}.json`))
+  	   commit('setCompany', require(`~/contents/json/site_parts/company.${params.locale}.json`))
+  	   commit('setContact', require(`~/contents/json/site_parts/contact_form.${params.locale}.json`))
     }
 	}
 }

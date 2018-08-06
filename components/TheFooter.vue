@@ -9,13 +9,13 @@
               <div class="span6">
                   <address class="clearfix">
                       <h4>ジョインタネット</h4>
-                      <p><small>Address:&nbsp;</small>3-7-2-216 Higashi Ooi, Shinagawa-ku, Tokyo, Japan 140-0011</p>
-                      <p><small>Tel: &nbsp;</small>+81-908-382-5207</p>
-                      <p><small>Business Details:&nbsp;</small>Internet / Web System Consulting, Design, Development, Management and Maintenance</p>
+                      <p><small>Address:&nbsp;</small>{{ company.address }}</p>
+                      <p><small>Tel: &nbsp;</small>{{ company.tel }}</p>
+                      <p><small>Business Details:&nbsp;</small>{{ company.business }}</p>
                   </address>
                   <address class="clearfix">
-                      <p class="pull-left"><img class="face" src="~/assets/img/yanbe-c.png" alt="山辺&nbsp;登"></p>
-                      <p><small>代表:&nbsp;</small><strong>Noboru&nbsp;Yamabe</strong></p>
+                      <p class="pull-left"><img class="face" src="~/assets/img/yanbe-c.png" :alt="company.repname"></p>
+                      <p><small>代表:&nbsp;</small><strong>{{ company.repname }}</strong></p>
                   </address>
               </div>
               <div id="myCarousel" class="carousel slide span6">
@@ -56,3 +56,15 @@
       </div>
   </footer>
 </template>
+<script>
+export default {
+  computed: {
+		company () {
+			return this.$store.state.company
+		},
+    contact () {
+      return this.$store.state.contact
+    }
+	},
+}
+</script>
