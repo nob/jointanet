@@ -4,7 +4,7 @@ step1_msg: >-
   following form.
 step1_sub_msg: We will get back to you within 48 hours.
 step1_txt_placeholder: 'ご相談/ご質問内容: あなたが既にお持ちのウェブサイトについて、　新しく制作したいウェブサイトについて、等…'
-step1_btn_label: 次へ
+step1_btn_label: Next
 step2_msg: Please give us your name and contact info.
 step2_sub_msg: This information will not be shared with or supplied to any third party.
 step2_name_label: お名前
