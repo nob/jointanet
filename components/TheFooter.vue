@@ -9,13 +9,13 @@
               <div class="span6">
                   <address class="clearfix">
                       <h4>ジョインタネット</h4>
-                      <p><small>Address:&nbsp;</small>{{ company.address }}</p>
-                      <p><small>Tel: &nbsp;</small>{{ company.tel }}</p>
-                      <p><small>Business Details:&nbsp;</small>{{ company.business }}</p>
+                      <p><small>{{ company.address_label}}:&nbsp;</small>{{ company.address }}</p>
+                      <p><small>{{ company.tel_label }}: &nbsp;</small>{{ company.tel }}</p>
+                      <p><small>{{ company.business_label }}:&nbsp;</small>{{ company.business }}</p>
                   </address>
                   <address class="clearfix">
                       <p class="pull-left"><img class="face" src="~/assets/img/yanbe-c.png" :alt="company.repname"></p>
-                      <p><small>代表:&nbsp;</small><strong>{{ company.repname }}</strong></p>
+                      <p><small>{{ company.repname_label }}:&nbsp;</small><strong>{{ company.repname }}</strong></p>
                   </address>
               </div>
               <div id="myCarousel" class="carousel slide span6">

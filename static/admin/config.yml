@@ -138,26 +138,26 @@ collections: # A list of collections the CMS should be able to edit
         name: "company_en"
         file: "contents/site_parts/company.en.md"
         fields:
-          - {label: "Address Label", name: "address-label", widget: "string"}
+          - {label: "Address Label", name: "address_label", widget: "string"}
           - {label: "Address", name: "address", widget: "string"}
-          - {label: "Tel Lebel", name: "tel-label", widget: "string"}
+          - {label: "Tel Lebel", name: "tel_label", widget: "string"}
           - {label: "Tel", name: "tel", widget: "string"}
-          - {label: "Business Detail Label", name: "business-label", widget: "string"}
+          - {label: "Business Detail Label", name: "business_label", widget: "string"}
           - {label: "Business Detail", name: "business", widget: "string"}
-          - {label: "Rep. Name Label", name: "repname-label", widget: "string"}
+          - {label: "Rep. Name Label", name: "repname_label", widget: "string"}
           - {label: "Rep. Name", name: "repname", widget: "string"}
 
       - label: "Company Info(Japanese)"
         name: "company_ja"
         file: "contents/site_parts/company.ja.md"
         fields:
-          - {label: "Address Label", name: "address-label", widget: "string"}
+          - {label: "Address Label", name: "address_label", widget: "string"}
           - {label: "Address", name: "address", widget: "string"}
-          - {label: "Tel Lebel", name: "tel-label", widget: "string"}
+          - {label: "Tel Lebel", name: "tel_label", widget: "string"}
           - {label: "Tel", name: "tel", widget: "string"}
-          - {label: "Business Detail Label", name: "business-label", widget: "string"}
+          - {label: "Business Detail Label", name: "business_label", widget: "string"}
           - {label: "Business Detail", name: "business", widget: "string"}
-          - {label: "Rep. Name Label", name: "repname-label", widget: "string"}
+          - {label: "Rep. Name Label", name: "repname_label", widget: "string"}
           - {label: "Rep. Name", name: "repname", widget: "string"}
 
       - label: "Navigation(English)"
@@ -180,36 +180,36 @@ collections: # A list of collections the CMS should be able to edit
         name: "contact_en"
         file: "contents/site_parts/contact_form.en.md"
         fields:
-          - {label: "Step1 Message", name: "step1-msg", widget: "string"}
-          - {label: "Step1 Sub Message", name: "step1-sub-msg", widget: "string"}
-          - {label: "Step1 Text Placeholder", name: "step1-txt-placeholder", widget: "string"}
-          - {label: "Step1 Button Label", name: "step1-btn-label", widget: "string"}
-          - {label: "Step2 Message", name: "step2-msg", widget: "string"}
-          - {label: "Step2 Sub Message", name: "step2-sub-msg", widget: "string"}
-          - {label: "Step2 Name Label", name: "step2-name-label", widget: "string"}
-          - {label: "Step2 Email Label", name: "step2-email-label", widget: "string"}
-          - {label: "Step2 URL Label", name: "step2-url-label", widget: "string"}
-          - {label: "Step2 Button Label", name: "step2-btn-label", widget: "string"}
-          - {label: "Step2 Back Button label", name: "step2-back-btn-label", widget: "string"}
-          - {label: "Step2 Loading Message", name: "step2-loading-msg", widget: "string"}
-          - {label: "Step3 Message", name: "step3-msg", widget: "string"}
-          - {label: "Step3 Sub Message", name: "step3-sub-msg", widget: "string"}
+          - {label: "Step1 Message", name: "step1_msg", widget: "string"}
+          - {label: "Step1 Sub Message", name: "step1_sub_msg", widget: "string"}
+          - {label: "Step1 Text Placeholder", name: "step1_txt_placeholder", widget: "string"}
+          - {label: "Step1 Button Label", name: "step1_btn_label", widget: "string"}
+          - {label: "Step2 Message", name: "step2_msg", widget: "string"}
+          - {label: "Step2 Sub Message", name: "step2_sub_msg", widget: "string"}
+          - {label: "Step2 Name Label", name: "step2_name_label", widget: "string"}
+          - {label: "Step2 Email Label", name: "step2_email_label", widget: "string"}
+          - {label: "Step2 URL Label", name: "step2_url_label", widget: "string"}
+          - {label: "Step2 Button Label", name: "step2_btn_label", widget: "string"}
+          - {label: "Step2 Back Button label", name: "step2_back_btn_label", widget: "string"}
+          - {label: "Step2 Loading Message", name: "step2_loading_msg", widget: "string"}
+          - {label: "Step3 Message", name: "step3_msg", widget: "string"}
+          - {label: "Step3 Sub Message", name: "step3_sub_msg", widget: "string"}
 
       - label: "Contact Form(Japanese)"
         name: "contact_ja"
         file: "contents/site_parts/contact_form.ja.md"
         fields:
-          - {label: "Step1 Message", name: "step1-msg", widget: "string"}
-          - {label: "Step1 Sub Message", name: "step1-sub-msg", widget: "string"}
-          - {label: "Step1 Text Placeholder", name: "step1-txt-placeholder", widget: "string"}
-          - {label: "Step1 Button Label", name: "step1-btn-label", widget: "string"}
-          - {label: "Step2 Message", name: "step2-msg", widget: "string"}
-          - {label: "Step2 Sub Message", name: "step2-sub-msg", widget: "string"}
-          - {label: "Step2 Name Label", name: "step2-name-label", widget: "string"}
-          - {label: "Step2 Email Label", name: "step2-email-label", widget: "string"}
-          - {label: "Step2 URL Label", name: "step2-url-label", widget: "string"}
-          - {label: "Step2 Button Label", name: "step2-btn-label", widget: "string"}
-          - {label: "Step2 Back Button label", name: "step2-back-btn-label", widget: "string"}
-          - {label: "Step2 Loading Message", name: "step2-loading-msg", widget: "string"}
-          - {label: "Step3 Message", name: "step3-msg", widget: "string"}
-          - {label: "Step3 Sub Message", name: "step3-sub-msg", widget: "string"}
+          - {label: "Step1 Message", name: "step1_msg", widget: "string"}
+          - {label: "Step1 Sub Message", name: "step1_sub_msg", widget: "string"}
+          - {label: "Step1 Text Placeholder", name: "step1_txt_placeholder", widget: "string"}
+          - {label: "Step1 Button Label", name: "step1_btn_label", widget: "string"}
+          - {label: "Step2 Message", name: "step2_msg", widget: "string"}
+          - {label: "Step2 Sub Message", name: "step2_sub_msg", widget: "string"}
+          - {label: "Step2 Name Label", name: "step2_name_label", widget: "string"}
+          - {label: "Step2 Email Label", name: "step2_email_label", widget: "string"}
+          - {label: "Step2 URL Label", name: "step2_url_label", widget: "string"}
+          - {label: "Step2 Button Label", name: "step2_btn_label", widget: "string"}
+          - {label: "Step2 Back Button label", name: "step2_back_btn_label", widget: "string"}
+          - {label: "Step2 Loading Message", name: "step2_loading_msg", widget: "string"}
+          - {label: "Step3 Message", name: "step3_msg", widget: "string"}
+          - {label: "Step3 Sub Message", name: "step3_sub_msg", widget: "string"}
