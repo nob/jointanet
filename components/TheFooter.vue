@@ -19,7 +19,7 @@
                   </address>
               </div>
               <div id="myCarousel" class="carousel slide span6">
-                  <form id="inquiry" name="contact" action="/en/articles/facebook" method="post" accept-charset="utf-8" class="carousel-inner" netlify>
+                  <form id="inquiry" name="contact" action="/en/articles/facebook" method="post" accept-charset="utf-8" class="carousel-inner" netlify-recaptcha netlify>
                       <input type="hidden" name="form-name" value="contact">
                       <div id="inquiry-1" class="active item">
                           <h5>{{ contact.step1_msg }}</h5>
@@ -46,8 +46,8 @@
                               <button id="btn-inquiry-submit" class="btn btn-large btn-jointanet-1 pull-right" type="submit">{{ contact.step2_btn_label }}&nbsp;<i class=" icon-ok icon-white"></i></button>
                               <img id="loading" class="pull-right" src="~/assets/img/waiting.gif" :alt="contact.step2_loading_msg">
                           </div>
-                          <div data-netlify-recaptcha></div>
                       </div>
+                      <div class="g-recaptcha" data-sitekey="6LfBtGgUAAAAAJ5wALdJsPtiNWSb4H23SJOB5sAV"></div>
                       <div id="inquiry-3" class="item">
                           <h3>{{ contact.step3_msg }}</h3>
                           <p><small>{{ contact.step3_sub_msg }}</small></p>
