@@ -135,6 +135,24 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Back URL", name: "back-url", widget: "string", required: false}
           - {label: "Body", name: "body", widget: "markdown"}
 
+      - label: "404 Page Not Found(English)"
+        name: "404_en"
+        file: "contents/404.en.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Sub Title", name: "subtitle", widget: "string", required: false}
+          - {label: "Back URL", name: "back-url", widget: "string", required: false}
+          - {label: "Body", name: "body", widget: "markdown"}
+
+      - label: "404 Page Not Found(Japanese)"
+        name: "404_ja"
+        file: "contents/404.ja.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Sub Title", name: "subtitle", widget: "string", required: false}
+          - {label: "Back URL", name: "back-url", widget: "string", required: false}
+          - {label: "Body", name: "body", widget: "markdown"}
+
   - name: "site_parts"
     label: "Site Parts"
     files:
