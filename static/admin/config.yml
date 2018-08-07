@@ -23,7 +23,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Sub Title", name: "subtitle", widget: "string", required: false}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Fearured Image", name: "image", widget: "image", required: false}
-      - {label: "Back URL", name: "back-url", widget: "string", required: false}
+      - {label: "Back URL", name: "back_url", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "articles_ja"
@@ -38,7 +38,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Sub Title", name: "subtitle", widget: "string", required: false}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Fearured Image", name: "image", widget: "image", required: false}
-      - {label: "Back URL", name: "back-url", widget: "string", required: false}
+      - {label: "Back URL", name: "back_url", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "works_en"
@@ -53,8 +53,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Screentshot", name: "screenshot", widget: "image"}
       - {label: "Domain", name: "domain", widget: "string"}
-      - {label: "Live URL", name: "live-url", widget: "string"}
-      - {label: "Back URL", name: "back-url", widget: "string", required: false}
+      - {label: "Live URL", name: "live_url", widget: "string"}
+      - {label: "Back URL", name: "back_url", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "works_ja"
@@ -69,8 +69,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Screentshot", name: "screenshot", widget: "image"}
       - {label: "Domain", name: "domain", widget: "string"}
-      - {label: "Live URL", name: "live-url", widget: "string"}
-      - {label: "Back URL", name: "back-url", widget: "string", required: false}
+      - {label: "Live URL", name: "live_url", widget: "string"}
+      - {label: "Back URL", name: "back_url", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "services_en"
@@ -123,7 +123,7 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Sub Title", name: "subtitle", widget: "string", required: false}
-          - {label: "Back URL", name: "back-url", widget: "string", required: false}
+          - {label: "Back URL", name: "back_url", widget: "string", required: false}
           - {label: "Body", name: "body", widget: "markdown"}
 
       - label: "Price(Japanese)"
@@ -132,7 +132,7 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Sub Title", name: "subtitle", widget: "string", required: false}
-          - {label: "Back URL", name: "back-url", widget: "string", required: false}
+          - {label: "Back URL", name: "back_url", widget: "string", required: false}
           - {label: "Body", name: "body", widget: "markdown"}
 
       - label: "404 Page Not Found(English)"
@@ -141,7 +141,7 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Sub Title", name: "subtitle", widget: "string", required: false}
-          - {label: "Back URL", name: "back-url", widget: "string", required: false}
+          - {label: "Back URL", name: "back_url", widget: "string", required: false}
           - {label: "Body", name: "body", widget: "markdown"}
 
       - label: "404 Page Not Found(Japanese)"
@@ -150,7 +150,7 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Sub Title", name: "subtitle", widget: "string", required: false}
-          - {label: "Back URL", name: "back-url", widget: "string", required: false}
+          - {label: "Back URL", name: "back_url", widget: "string", required: false}
           - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "site_parts"

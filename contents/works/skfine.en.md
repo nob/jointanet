@@ -2,6 +2,6 @@
 title: 制作事例
 screenshot: skfine.png
 domain: www.skfine.com
-live-url: http://www.skfine.com
-back-url: /#works
+live_url: http://www.skfine.com
+back_url: /#works
 ---

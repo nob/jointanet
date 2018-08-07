@@ -40,17 +40,17 @@
             <div class="row">
                 <ul class="thumbnails">
                   <li class="span4">
-                    <a href="/works/ippuku" class="thumbnail">
+                    <a :href="`/${params.locale}/works/ippuku`" class="thumbnail">
                       <img src="~/assets/img/ippuku-thumb.png" alt="">
                     </a>
                   </li>
                   <li class="span4">
-                    <a href="/works/kioto" class="thumbnail">
+                    <a :href="`/${params.locale}/works/kioto`" class="thumbnail">
                       <img src="~/assets/img/kioto-thumb.png" alt="">
                     </a>
                   </li>
                   <li class="span4">
-                    <a href="/works/bglen" class="thumbnail">
+                    <a :href="`${params.locale}/works/bglen`" class="thumbnail">
                       <img src="~/assets/img/bglen-thumb.png" alt="">
                     </a>
                   </li>
@@ -59,12 +59,12 @@
             <div class="row">
                 <ul class="thumbnails">
                   <li class="span4">
-                    <a href="/works/zionus" class="thumbnail">
+                    <a :href="`${params.locale}/works/zionus`" class="thumbnail">
                       <img src="~/assets/img/zionus-thumb.png" alt="">
                     </a>
                   </li>
                   <li class="span4">
-                    <a href="/works/skfine" class="thumbnail">
+                    <a :href="`${params.locale}/works/skfine`" class="thumbnail">
                       <img src="~/assets/img/skfine-thumb.png" alt="">
                     </a>
                   </li>

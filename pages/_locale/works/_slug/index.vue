@@ -1,18 +1,19 @@
 <template>
-  <section>
-    <h1>
-      {{ title }}
-    </h1>
-    <hr>
-    <div class="">
-      <p class="ml-3">
-        <b>{{ params.slug }}</b>
-      </p>
-      <div class="article-body" v-html="bodyHtml">
+  <section id="details">
+      <div class="container">
+          <div class="row">
+              <div class="span12">
+                  <img id="screenshot" :src="`/img/${screenshot}`" :alt="title">
+                  <h4 class="text-center"><a :href="live_url" title="">{{ domain }}</a></h4>
+              </div>
+          </div>
+          <div class="row">
+              <div class="span12">
+                  <div v-html="bodyHtml"></div>
+              </div>
+          </div>
       </div>
-    </div>
-  </section>
-</template>
+  </section></template>
 <script>
 // import moment from 'moment-timezone';
 import { sourceFileArray, fileMap } from '../../../../contents/json/summary.json';
@@ -23,26 +24,12 @@ export default {
   asyncData ({ params, store}) {
     return Object.assign({}, require(`~/contents/json/works/${params.slug}.${params.locale}.json`), { params });
   },
-  // head() {
-  //   const title = `${this.title} - SUSTINA`;
-  //   const url = `https://sustina.co/news/${this.params.date}/${this.params.slug}/`;
-  //   return {
-  //     title: title,
-  //     meta: [
-  //       { hid: 'og:url', property: 'og:url', content: url },
-  //       { hid: 'og:title', property: 'og:title', content: title },
-  //     ],
-  //     link: [{ rel: 'canonical', href: url }],
-  //   };
-  // },
 };
 </script>
-<style lang="stylus" scoped>
-h1
-  font-size: 15px
-  font-weight: 700
-
-.article-body
-  h2
-    font-size: 13px
+<style scoped>
+#screenshot {
+	display: block;
+	margin: 0px auto 20px;
+	padding: 10px 0;
+}
 </style>
