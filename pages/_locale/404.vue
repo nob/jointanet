@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { sourceFileArray, fileMap } from '../../../contents/json/summary.json';
+import { sourceFileArray, fileMap } from '../../contents/json/summary.json';
 export default {
   validate ({ params, store }) {
     return sourceFileArray.includes(`contents/404.${params.locale}.md`);
