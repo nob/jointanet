@@ -8,7 +8,7 @@ module.exports = {
     routes: callback => {
       const { sourceFileArray } = require('./contents/json/summary.json');
       const routes = sourceFileArray.filter(sourceFileName => {
-        return /^contents\/site_parts/i.test(sourceFileName) ? false : true;
+        return /^contents\/(site_parts|services)/i.test(sourceFileName) ? false : true;
       }).map(sourceFileName => {
         return sourceFileName.replace(/^contents\/(.*)\.(.*)\.md/i, '\/$2/$1').replace(/index$/i, '');
       });
