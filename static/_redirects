@@ -4,5 +4,6 @@ https://jointanet.com https://jointanet.com/en/ 301 Language=en
 http://jointanet.com https://jointanet.com/ja/ 301 Language=ja
 https://jointanet.com https://jointanet.com/ja/ 301 Language=ja
 
+/* /en/404/index.html 404
 /en/* /en/404/index.html 404
 /ja/* /ja/404/index.html 404
