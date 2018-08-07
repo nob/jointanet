@@ -3,7 +3,7 @@
       <div id="top-pad1"></div>
       <div id="top-pad2"></div>
       <div class="container clearfix">
-          <a class="logo" href="/"><img src="~/assets/img/logo-l.png" alt="Jointanet"></a>
+          <a class="logo" :href="`/${this.$route.params.locale}`"><img src="~/assets/img/logo-l.png" alt="Jointanet"></a>
           <ul class="nav visible-desktop clearfix">
               <li class="text-center active"><a href="#services"><strong>{{ navi.sec1 }}</strong></a></li>
               <li class="text-center active"><a href="#price"><strong>{{ navi.sec2 }}</strong></a></li>

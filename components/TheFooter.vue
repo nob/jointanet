@@ -19,7 +19,7 @@
                   </address>
               </div>
               <div id="myCarousel" class="carousel slide span6">
-                  <form id="inquiry" name="contact" action="/" method="post" accept-charset="utf-8" class="carousel-inner" netlify-honeypot="bot-field" netlify>
+                  <form id="inquiry" name="contact" :action="`/${this.$route.params.locale}`" method="post" accept-charset="utf-8" class="carousel-inner" netlify-honeypot="bot-field" netlify>
                       <input type="hidden" name="form-name" value="contact">
                       <p style="display:none;">
                         <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
