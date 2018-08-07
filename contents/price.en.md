@@ -1,6 +1,8 @@
 ---
-title: ZERO Initial Costs !  + Monthly Fee only ￥45,000! <small><br>Simple Monthly Fee Plan</small>
-back-url: /#price
+title: >-
+  ZERO Initial Costs !  + Monthly Fee only ￥45,000! <small><br>Simple Monthly
+  Fee Plan</small>
+back-url: '/#price'
 ---
 
 Other companies may charge hundreds of thousands or yen or more to design and develop a website. And then will charge additional fees for redesigning and updating as your business needs change. Moreover, you may have to deal with new designers as they come and go from companies and face hard to understand additional charges.
@@ -13,7 +15,7 @@ We at JOINTANET believe that your web site plays an important role in your busin
 **Contracts are renewed very month.** We have confidence in what we are doing and see no reason to tie up customers in long term contracts.
 <br/><br/>
 
-###Additional Service and Fees
+### Additional Service and Fees
 
 - **Domain Registration and Maintenance Fees** <br>
 The domain name (xxxx.com) you select for your business is important as is the place where you store your web site. Please feel free to register and maintain your own domain or contract with other sources.
