@@ -25,5 +25,13 @@ export default {
   asyncData ({ params, store}) {
     return Object.assign({}, require(`~/contents/json/articles/${params.slug}.${params.locale}.json`), { params });
   },
+  head () {
+   return {
+     title: `${this.title} | Jointanet - ジョインタネット`,
+     meta: [
+       { hid: 'description', name: 'description', content: this.bodyContent.substr(0, 500) }
+     ]
+    }
+  }
 };
 </script>

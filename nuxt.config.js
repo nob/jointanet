@@ -25,7 +25,7 @@ module.exports = {
       { charset: 'utf-8' },
       { 'http-equiv' : 'X-UA-Compatible', content: 'IE=edge,chrome=1'},
       { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+      { hid: 'description', name: 'description', content: '' }
     ],
     htmlAttrs: {
       lang: 'ja',
@@ -42,11 +42,11 @@ module.exports = {
     ],
     link: [
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' },
-      { rel: 'shortcut icon', type: 'image/x-icon', href: '~/assets/img/favicon.ico' },
-      { rel: 'apple-touch-icon', href: '~/assets/img/apple-touch-icon-57x57.png' },
-      { rel: 'apple-touch-icon', sizes: '72x72', href: '~/assets/img/apple-touch-icon-72x72.png' },
-      { rel: 'apple-touch-icon', sizes: '114x114', href: '~/assets/img/apple-touch-icon-114x114.png' },
-      { rel: 'apple-touch-icon', sizes: '144x144', href: '~/assets/img/apple-touch-icon-144x144.png' }
+      { rel: 'shortcut icon', type: 'image/x-icon', href: '/img/favicon.ico' },
+      { rel: 'apple-touch-icon', href: '/img/apple-touch-icon-57x57.png' },
+      { rel: 'apple-touch-icon', sizes: '72x72', href: '/img/apple-touch-icon-72x72.png' },
+      { rel: 'apple-touch-icon', sizes: '114x114', href: '/img/apple-touch-icon-114x114.png' },
+      { rel: 'apple-touch-icon', sizes: '144x144', href: '/img/apple-touch-icon-144x144.png' }
     ],
   },
   css: [

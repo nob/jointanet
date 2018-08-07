@@ -15,7 +15,6 @@
       </div>
   </section></template>
 <script>
-// import moment from 'moment-timezone';
 import { sourceFileArray, fileMap } from '../../../../contents/json/summary.json';
 export default {
   validate ({ params, store }) {
@@ -24,6 +23,14 @@ export default {
   asyncData ({ params, store}) {
     return Object.assign({}, require(`~/contents/json/works/${params.slug}.${params.locale}.json`), { params });
   },
+  head () {
+   return {
+     title: `${this.title} | Jointanet - ジョインタネット`,
+     meta: [
+       { hid: 'description', name: 'description', content: this.bodyContent.substr(0, 500) }
+     ]
+    }
+  }
 };
 </script>
 <style scoped>

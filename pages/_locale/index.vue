@@ -98,6 +98,13 @@ export default {
     ];
     return Object.assign({}, index, { price }, { services }, { params });
   },
+  head () {
+   return {
+     meta: [
+       { hid: 'description', name: 'description', content: `${this.title} - ${this.bodyContent.substr(0, 500)}` }
+     ]
+    }
+  }
 };
 
 </script>
