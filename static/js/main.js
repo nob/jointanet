@@ -48,7 +48,7 @@ $(document).ready(function(){
 			// submit with AJAX
 			$.post(form.attr("action"), form.serialize(), function(json) {
 				// everything is ok. (server returned true)
-				if (json.accepted === true)  {
+				// if (json.accepted === true)  {
 					console.log('serverside-ok');
 					$('.carousel').carousel('next');
 					setTimeout(function(){
@@ -58,11 +58,11 @@ $(document).ready(function(){
 						$('.carousel').carousel('next');
 					}, 4000);
 				// server-side validation failed. use invalidate() to show errors
-				} else {
-					console.log('serverside-ng');
-				}
+				// } else {
+				// 	console.log('serverside-ng');
+				// }
 				$('#loading').hide();
-			}, 'json');
+			});
 			// prevent default form submission logic
 			event.preventDefault();
 		}

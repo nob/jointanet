@@ -19,7 +19,7 @@
                   </address>
               </div>
               <div id="myCarousel" class="carousel slide span6">
-                  <form id="inquiry" action="/backend/inquiry" method="post" accept-charset="utf-8" class="carousel-inner">
+                  <form id="inquiry" name="contact" action="/" method="post" accept-charset="utf-8" class="carousel-inner" netlify>
                       <div id="inquiry-1" class="active item">
                           <h5>{{ contact.step1_msg }}</h5>
                           <p><small>{{ contact.step1_sub_msg }}</small></p>
