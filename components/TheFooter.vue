@@ -19,8 +19,11 @@
                   </address>
               </div>
               <div id="myCarousel" class="carousel slide span6">
-                  <form id="inquiry" name="contact" action="/en/articles/facebook" method="post" accept-charset="utf-8" class="carousel-inner" netlify-recaptcha netlify>
+                  <form id="inquiry" name="contact" action="/en/articles/facebook" method="post" accept-charset="utf-8" class="carousel-inner" netlify-honeypot="bot-field" netlify>
                       <input type="hidden" name="form-name" value="contact">
+                      <p style="display:none;">
+                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                      </p>
                       <div id="inquiry-1" class="active item">
                           <h5>{{ contact.step1_msg }}</h5>
                           <p><small>{{ contact.step1_sub_msg }}</small></p>
@@ -47,7 +50,7 @@
                               <img id="loading" class="pull-right" src="~/assets/img/waiting.gif" :alt="contact.step2_loading_msg">
                           </div>
                       </div>
-                      <div class="g-recaptcha" data-sitekey="6LfBtGgUAAAAAJ5wALdJsPtiNWSb4H23SJOB5sAV"></div>
+                      <!-- <div class="g-recaptcha" data-sitekey="6LfBtGgUAAAAAJ5wALdJsPtiNWSb4H23SJOB5sAV"></div> -->
                       <div id="inquiry-3" class="item">
                           <h3>{{ contact.step3_msg }}</h3>
                           <p><small>{{ contact.step3_sub_msg }}</small></p>
