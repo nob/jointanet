@@ -39,7 +39,6 @@ module.exports = {
     script: [
       { src: 'https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' },
       { src: '/modernizr-2.6.2-respond-1.1.0.min.js'}
-      // { src: 'https://www.google.com/recaptcha/api.js'}
     ],
     link: [
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' },
