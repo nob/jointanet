@@ -46,6 +46,7 @@
                               <button id="btn-inquiry-submit" class="btn btn-large btn-jointanet-1 pull-right" type="submit">{{ contact.step2_btn_label }}&nbsp;<i class=" icon-ok icon-white"></i></button>
                               <img id="loading" class="pull-right" src="~/assets/img/waiting.gif" :alt="contact.step2_loading_msg">
                           </div>
+                          <div data-netlify-recaptcha></div>
                       </div>
                       <div id="inquiry-3" class="item">
                           <h3>{{ contact.step3_msg }}</h3>
