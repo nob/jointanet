@@ -47,9 +47,6 @@ $(document).ready(function(){
 			$('#loading').show();
 			// submit with AJAX
 			$.post(form.attr("action"), form.serialize(), function(json) {
-				// everything is ok. (server returned true)
-				// if (json.accepted === true)  {
-					console.log('serverside-ok');
 					$('.carousel').carousel('next');
 					setTimeout(function(){
 						$('#inquiry :input').val('');
@@ -57,10 +54,6 @@ $(document).ready(function(){
 						all_fields.data("validator").reset();
 						$('.carousel').carousel('next');
 					}, 4000);
-				// server-side validation failed. use invalidate() to show errors
-				// } else {
-				// 	console.log('serverside-ng');
-				// }
 				$('#loading').hide();
 			});
 			// prevent default form submission logic
