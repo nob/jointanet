@@ -1,7 +1,7 @@
 <template>
   <section>
     <h1>
-      {{ title }} {{params.locale}}
+      {{ title }}
     </h1>
     <hr>
     <div class="">
