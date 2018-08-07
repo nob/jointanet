@@ -20,7 +20,7 @@
               </div>
               <div id="myCarousel" class="carousel slide span6">
                   <form id="inquiry" name="contact" action="/en/articles/facebook" method="post" accept-charset="utf-8" class="carousel-inner" netlify>
-                      <input type="hidden" name="form-name" val="contact">
+                      <input type="hidden" name="form-name" value="contact">
                       <div id="inquiry-1" class="active item">
                           <h5>{{ contact.step1_msg }}</h5>
                           <p><small>{{ contact.step1_sub_msg }}</small></p>
