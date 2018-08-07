@@ -41,7 +41,7 @@ module.exports = {
       { src: '/modernizr-2.6.2-respond-1.1.0.min.js'}
     ],
     link: [
-      { rel: 'stylesheet', href: 'http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' },
       { rel: 'shortcut icon', type: 'image/x-icon', href: '/assets/img/favicon.ico' },
       { rel: 'apple-touch-icon', href: '/assets/img/apple-touch-icon-57x57.png' },
       { rel: 'apple-touch-icon', sizes: '72x72', href: '/assets/img/apple-touch-icon-72x72.png' },
