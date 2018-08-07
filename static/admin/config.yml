@@ -122,6 +122,7 @@ collections: # A list of collections the CMS should be able to edit
         file: "contents/price.en.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
+          - {label: "Sub Title", name: "subtitle", widget: "string", required: false}
           - {label: "Back URL", name: "back-url", widget: "string", required: false}
           - {label: "Body", name: "body", widget: "markdown"}
 
@@ -130,6 +131,7 @@ collections: # A list of collections the CMS should be able to edit
         file: "contents/price.ja.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
+          - {label: "Sub Title", name: "subtitle", widget: "string", required: false}
           - {label: "Back URL", name: "back-url", widget: "string", required: false}
           - {label: "Body", name: "body", widget: "markdown"}
 
