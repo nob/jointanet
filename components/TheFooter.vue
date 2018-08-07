@@ -22,7 +22,7 @@
                   <form id="inquiry" name="contact" :action="`/${this.$route.params.locale}`" method="post" accept-charset="utf-8" class="carousel-inner" netlify-honeypot="bot-field" netlify>
                       <input type="hidden" name="form-name" value="contact">
                       <p style="display:none;">
-                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                        <label>Don’t fill this out if you're human: <input type="text" value="" name="bot-field" /></label>
                       </p>
                       <div id="inquiry-1" class="active item">
                           <h5>{{ contact.step1_msg }}</h5>
