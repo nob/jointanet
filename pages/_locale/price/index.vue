@@ -18,7 +18,9 @@ export default {
     return sourceFileArray.includes(`contents/price.${params.locale}.md`);
   },
   asyncData ({ params, store}) {
-    return Object.assign({}, require(`~/contents/json/price.${params.locale}.json`), { params });
+    const price = require(`~/contents/json/price.${params.locale}.json`);
+    store.state.backUrl = price.back_url;
+    return Object.assign({}, price, { params });
   },
   head () {
    return {

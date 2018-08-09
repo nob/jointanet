@@ -9,7 +9,7 @@
               <li class="text-center"><a :href="`/${this.$route.params.locale}/#price`"><strong>{{ navi.sec2 }}</strong></a></li>
               <li class="text-center"><a :href="`/${this.$route.params.locale}/#works`"><strong>{{ navi.sec3 }}</strong></a></li>
           </ul>
-          <a v-if="!(/(en|ja)\/*$/i.test(this.$route.path))" id="btn-back-to-home" class="btn btn-inverse pull-left hidden-desktop" href="" type="button"><i class="icon-chevron-left icon-white"></i>&nbsp;戻る</a>
+          <a v-if="!(/(en|ja)\/*$/i.test(this.$route.path))" id="btn-back-to-home" class="btn btn-inverse pull-left hidden-desktop" :href="backUrl" type="button"><i class="icon-chevron-left icon-white"></i>&nbsp;戻る</a>
       </div>
   </header>
 </template>
@@ -17,8 +17,11 @@
 export default {
   computed: {
 		navi () {
-			return this.$store.state.navi
-		}
+			return this.$store.state.navi;
+		},
+    backUrl() {
+      return this.$store.state.backUrl;
+    }
 	},
 }
 </script>

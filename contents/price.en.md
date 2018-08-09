@@ -1,7 +1,7 @@
 ---
 title: ZERO Initial Costs ! + Monthly Fee only ￥45,000! 
 subtitle: Simple Monthly Fee Plan
-back_url: '/#price'
+back_url: '/en/#price'
 ---
 
 Other companies may charge hundreds of thousands or yen or more to design and develop a website. And then will charge additional fees for redesigning and updating as your business needs change. Moreover, you may have to deal with new designers as they come and go from companies and face hard to understand additional charges.

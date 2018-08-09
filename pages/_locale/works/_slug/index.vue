@@ -21,7 +21,9 @@ export default {
     return sourceFileArray.includes(`contents/works/${params.slug}.${params.locale}.md`);
   },
   asyncData ({ params, store}) {
-    return Object.assign({}, require(`~/contents/json/works/${params.slug}.${params.locale}.json`), { params });
+    const work = require(`~/contents/json/works/${params.slug}.${params.locale}.json`);
+    store.state.backUrl = work.back_url;
+    return Object.assign({}, work, { params });
   },
   head () {
    return {

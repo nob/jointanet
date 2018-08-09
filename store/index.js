@@ -1,7 +1,8 @@
 export const state = () => ({
-	navi: require('~/contents/json/site_parts/navigation.en.json'),
-	company: require('~/contents/json/site_parts/navigation.en.json'),
-	contact: require('~/contents/json/site_parts/contact_form.en.json'),
+  navi: require('~/contents/json/site_parts/navigation.en.json'),
+  company: require('~/contents/json/site_parts/navigation.en.json'),
+  contact: require('~/contents/json/site_parts/contact_form.en.json'),
+  backUrl: '/'
 })
 
 export const mutations = {
@@ -13,7 +14,7 @@ export const mutations = {
 	},
 	setContact (state, contact) {
 		state.contact = contact
-	}
+	},
 }
 
 export const actions = {

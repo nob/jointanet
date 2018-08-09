@@ -3,7 +3,7 @@ title: A Facebook Page for your Business may be Helpful but is it Really Enough?
 subtitle: ''
 date: 2018-08-05T07:10:48.660Z
 image: service-4-l.png
-back_url: '/#service'
+back_url: '/en/#service'
 ---
 
 Creating a Facebook page under your business's name is like renting a space/booth for free at the world's largest event being held by a company known across the world. Moreover this event is open to the public 24 hours a day and 365 days a year. Although percentages vary with age and place, this gathering spot boasts participants of about 25 million people in Japan and over 1.79 billion people worldwide who come to meet, chat, discover and share.
