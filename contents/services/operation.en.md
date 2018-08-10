@@ -1,6 +1,7 @@
 ---
-title: Advice and Support to<br>Make the Best of your Site
-image: service-2-l.png
+title: Advice and Support to Make the Best of your Site
+date: 2018-08-08T15:08:24.396Z
+image: /img/service-2.png
 ---
 To make sure that your message stays fresh and reflects changes in your business needs and goals, it is necessary to **constantly re-think and make changes so that you can get the best use** of your site.
 
