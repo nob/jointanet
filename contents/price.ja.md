@@ -1,6 +1,7 @@
 ---
 title: '月額￥35,000 + 初期費用￥0。'
 subtitle: シンプルな料金設定
+btn_label_home: 料金について詳しく
 back_url: '/ja/#price'
 ---
 
