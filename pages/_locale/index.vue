@@ -29,7 +29,7 @@
               <div class="span8 offset2">
                   <h2>{{ price.title }}<small><br>{{ price.subtitle }}</small></h2>
                   <div v-html="price.bodyHtml.substring(0, 550) + '…'"></div>
-                  <p class="text-right"><a class="btn btn-jointanet-2" :href="`/${params.locale}/price`">料金について詳しく&nbsp;<i class="icon-forward icon-white"></i></a></p>
+                  <p class="text-right"><a class="btn btn-jointanet-2" :href="`/${params.locale}/price`">{{ price.btn_label_home }}&nbsp;<i class="icon-forward icon-white"></i></a></p>
               </div>
             </section>
         </div>
