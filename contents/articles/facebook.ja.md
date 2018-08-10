@@ -2,7 +2,7 @@
 title: あなたがのビジネスがfacebookページだけではなく、独自のウェブサイトを持つ価値
 subtitle: ''
 date: 2018-08-05T07:11:15.154Z
-image: service-4-l.png
+image: /img/service-4-l.png
 back_url: '/ja/#service'
 ---
 
