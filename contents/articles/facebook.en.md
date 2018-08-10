@@ -2,7 +2,7 @@
 title: A Facebook Page for your Business may be Helpful but is it Really Enough?
 subtitle: ''
 date: 2018-08-05T07:10:48.660Z
-image: service-4-l.png
+image: /img/service-4-l.png
 back_url: '/en/#service'
 ---
 
