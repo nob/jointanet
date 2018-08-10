@@ -11,7 +11,7 @@
             <h1 class="text-center hidden-desktop">{{ navi.sec1 }}</h1>
             <section class="row featurette" v-for="(s, index) of services" :key="index">
               <div :class="[index%2 === 0 ? 'pull-left' : 'pull-right', 'span6']">
-                  <img class="featurette-image illustration" :src="`/img/${s.image}`" :alt="s.title"/>
+                  <img class="featurette-image illustration" :src="`${s.image}`" :alt="s.title"/>
               </div>
               <div class="span6">
                   <h2>{{ s.title }}<small><br>{{ s.subtitle }}</small></h2>

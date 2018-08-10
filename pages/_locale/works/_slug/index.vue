@@ -8,7 +8,7 @@
           </div>
           <div class="row">
               <div class="span12">
-                  <img id="screenshot" :src="`/img/${screenshot}`" :alt="domain">
+                  <img id="screenshot" :src="`${screenshot}`" :alt="domain">
                   <h4 class="text-center"><a :href="live_url" title="domain" target="_blank">{{ domain }}</a></h4>
               </div>
           </div>

@@ -6,7 +6,7 @@
                   <h1 class="text-center">{{ title }}<small><br>{{ subtitle }}</small></h1>
                   <div class="row">
                       <div class="span6 offset1">
-                          <img class="illustration" :src="`/img/${image}`" :alt="title"/>
+                          <img class="illustration" :src="`${image}`" :alt="title"/>
                       </div>
                   </div>
                   <div v-html="bodyHtml"></div>
