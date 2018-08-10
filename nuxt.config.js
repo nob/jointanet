@@ -3,7 +3,7 @@ module.exports = {
   devtools: true,
   env: {
   },
-  plugins: ['~/plugins/i18n.js'],
+  // plugins: ['~/plugins/i18n.js'],
   generate: {
     routes: callback => {
       const { sourceFileArray } = require('./contents/json/summary.json');
@@ -76,6 +76,6 @@ module.exports = {
         })
       }
     },
-    vendor: ['vue-i18n']
+    // vendor: ['vue-i18n']
   }
 }
