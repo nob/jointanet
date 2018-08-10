@@ -1,6 +1,7 @@
 ---
-title: Website Visitor Behavior and <br>Trend Analysis Reports
-image: service-3-l.png
+title: Website Visitor Behavior and Trend Analysis Reports
+date: 2018-08-08T15:06:21.009Z
+image: /img/service-3-l.png
 ---
 No matter how cool your site design may be, the meaning is lost if it is not being updated and improved to meet your visitors behavior and needs.  Just making changes without understanding what it is that needs changing does not help improve traffic.  But for places like a website, where you can't see the visitors faces, **On what can you base your ideas for improving or enhancing your site?**
 
