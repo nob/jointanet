@@ -7,9 +7,9 @@
         </div>
     </section>
     <section id="services">
-        <div class="container" v-for="(s, index) of services" :key="index">
-            <h1 class="text-center hidden-desktop">ジョインタネットのサービス</h1>
-            <section class="row featurette">
+        <div class="container">
+            <h1 class="text-center hidden-desktop">{{ navi.sec1 }}</h1>
+            <section class="row featurette" v-for="(s, index) of services" :key="index">
               <div :class="[index%2 === 0 ? 'pull-left' : 'pull-right', 'span6']">
                   <img class="featurette-image illustration" :src="`/img/${s.image}`" :alt="s.title"/>
               </div>
@@ -18,13 +18,13 @@
                   <div v-html="s.bodyHtml"></div>
                   <!-- <p class="text-right"><a class="btn btn-jointanet-2" href="{{ url }}">詳しく読む&nbsp;<i class="icon-forward icon-white"></i></a></p> -->
               </div>
+              <hr v-if="!(services.length -1 === index)" class="featurette-divider">
             </section>
-            <hr class="featurette-divider">
         </div>
     </section>
     <section id="price">
         <div class="container">
-            <h1 class="text-center hidden-desktop">料金</h1>
+            <h1 class="text-center hidden-desktop">{{ navi.sec2 }}</h1>
             <section class="row featurette">
               <div class="span8 offset2">
                   <h2>{{ price.title }}<small><br>{{ price.subtitle }}</small></h2>
@@ -36,7 +36,7 @@
     </section>
     <section id="works">
         <div class="container">
-            <h1 class="text-center">制作事例</h1>
+            <h1 class="text-center">{{ navi.sec3 }}</h1>
             <div class="row">
                 <ul class="thumbnails">
                   <li class="span4">
@@ -123,6 +123,11 @@ export default {
        { hid: 'description', name: 'description', content: `${this.title} - ${this.bodyContent.substr(0, 500)}` }
      ]
     }
+  },
+  computed: {
+    navi () {
+      return this.$store.state.navi;
+    },
   }
 };
 
