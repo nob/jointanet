@@ -123,6 +123,7 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Sub Title", name: "subtitle", widget: "string", required: false}
+          - {label: "Button label in Home", name: "btn_label_home", widget: "string"}
           - {label: "Back URL", name: "back_url", widget: "string", required: false}
           - {label: "Body", name: "body", widget: "markdown"}
 
@@ -142,7 +143,6 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Sub Title", name: "subtitle", widget: "string", required: false}
-          - {label: "Button label in Home", name: "btn_label_home", widget: "string"}
           - {label: "Back URL", name: "back_url", widget: "string", required: false}
           - {label: "Body", name: "body", widget: "markdown"}
 
