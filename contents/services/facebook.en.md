@@ -1,7 +1,7 @@
 ---
 title: 'Linkage with Facebook, Instagram and other SNS'
 date: 2018-08-09T06:20:53.102Z
-image: service-4-l.png
+image: /img/service-4.png
 ---
 Even in this modern world, businesses still rely on person-to-person &quot;word-of-mouth&quot; interaction to broaden their scope and customer base.  Facebook and other social networks, if utilized properly, are great gathering places for this kind of promotion.  It is easy to put up a Facebook page or start a social networking account, but it remains difficult in making  it a useful promotional tool to broaden and improve your customer base.
 
