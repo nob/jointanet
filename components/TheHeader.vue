@@ -11,6 +11,10 @@
           </ul>
           <a v-if="!(/(en|ja)\/*$/i.test(this.$route.path))" id="btn-back-to-home" class="btn btn-inverse pull-left hidden-desktop" :href="backUrl" type="button"><i class="icon-chevron-left icon-white"></i>&nbsp;戻る</a>
       </div>
+      <div class="lang-btns">
+        <a :class="['btn-en', this.$route.params.locale === 'en' ? 'active' : '']" href="/en/">English</a>
+        <a :class="['btn-ja', this.$route.params.locale === 'ja' ? 'active' : '']" href="/ja/">日本語</a>
+      </div>
   </header>
 </template>
 <script>
