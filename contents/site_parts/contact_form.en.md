@@ -3,17 +3,17 @@ step1_msg: >-
   Please feel free to contact us with questions or inquiries by using the
   following form.
 step1_sub_msg: We will get back to you within 48 hours.
-step1_txt_placeholder: 'ご相談/ご質問内容: あなたが既にお持ちのウェブサイトについて、　新しく制作したいウェブサイトについて、等…'
+step1_txt_placeholder: About your existing website or new website you want to create、etc…
 step1_btn_label: Next
 step2_msg: Please give us your name and contact info.
 step2_sub_msg: This information will not be shared with or supplied to any third party.
-step2_name_label: お名前
-step2_email_label: Eメールアドレス
-step2_url_label: ウェブサイトアドレス(もし既にお持ちであれば)
-step2_btn_label: 送信
-step2_back_btn_label: 戻る
+step2_name_label: Your name
+step2_email_label: Your email address
+step2_url_label: website address (if you have it)
+step2_btn_label: Send
+step2_back_btn_label: Back
 step2_loading_msg: sending...
-step3_msg: お問い合わせありがとうございました。
-step3_sub_msg: 48時間以内にこちらからご連絡させて頂きます。
+step3_msg: Thank you for contacting us!
+step3_sub_msg: We will get back to you within 48 hours.
 ---
 

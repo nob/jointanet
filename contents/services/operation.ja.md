@@ -1,5 +1,5 @@
 ---
-title: 'ウェブサイトの<span style = "display: block;">活用サポートやアドバイス</span>'
+title: ウェブサイトの活用サポートやアドバイス
 date: 2018-08-09T10:27:08.089Z
 image: service-2.png
 ---
