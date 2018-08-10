@@ -1,6 +1,7 @@
 ---
 title: 'ZERO Initial Costs ! + Monthly Fee only ￥45,000!'
 subtitle: Simple Monthly Fee Plan
+btn_label_home: More about our pricing
 back_url: '/en/#price'
 ---
 
