@@ -1,7 +1,9 @@
 ---
 title: 制作事例
-screenshot: ippuku15.png
+date: 2018-08-09T15:19:26.538Z
+screenshot: /img/ippuku15.png
 domain: www.ippukuberkeley.com
-live_url: http://www.ippukuberkeley.com/
-back_url: /en/#works
+live_url: 'http://www.ippukuberkeley.com/'
+back_url: '/en/#works'
 ---
+
