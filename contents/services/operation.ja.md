@@ -1,5 +1,6 @@
 ---
-title: ウェブサイトの<br>活用サポートやアドバイス
+title: 'ウェブサイトの<span style = "display: block;">活用サポートやアドバイス</span>'
+date: 2018-08-09T10:27:08.089Z
 image: service-2.png
 ---
 
