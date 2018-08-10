@@ -1,5 +1,4 @@
 ---
 title: 成長するあなたのビジネスをずっと伝えるウェブサイト
 ---
-
-私達 also **offer strong support for those looking for a multi-lingual presence in the international marketplace**, whether you are a Japanese company looking to enter an overseas market or an overseas company looking to make a stand in the Japanese market. **Creating multilingual websites** is one our strong points .
+現在、海外に向けて展開したい、海外にある事業と提携して日本で展開したい等、**インターナショナルな活動を行っている/始めたいビジネスを積極的に応援しています。**ジョインタネットは、**多言語のウェブサイト**も得意としています。
