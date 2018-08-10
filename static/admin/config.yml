@@ -55,7 +55,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Domain", name: "domain", widget: "string"}
       - {label: "Live URL", name: "live_url", widget: "string"}
       - {label: "Back URL", name: "back_url", widget: "string", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
 
   - name: "works_ja"
     label: "Works(Japnese)"
@@ -71,7 +71,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Domain", name: "domain", widget: "string"}
       - {label: "Live URL", name: "live_url", widget: "string"}
       - {label: "Back URL", name: "back_url", widget: "string", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
 
   - name: "services_en"
     label: "Services(English)"

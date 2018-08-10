@@ -36,7 +36,7 @@
     </section>
     <section id="works">
         <div class="container">
-            <h1 class="text-center hidden-desktop">制作事例</h1>
+            <h1 class="text-center">制作事例</h1>
             <div class="row">
                 <ul class="thumbnails">
                   <li class="span4">
@@ -66,6 +66,25 @@
                   <li class="span4">
                     <a :href="`/${params.locale}/works/skfine`" class="thumbnail">
                       <img src="~/assets/img/skfine-thumb.png" alt="">
+                    </a>
+                  </li>
+                  <li class="span4">
+                    <a :href="`/${params.locale}/works/ippuku15`" class="thumbnail">
+                      <img src="~/assets/img/ippuku15-thumb.png" alt="">
+                    </a>
+                  </li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul class="thumbnails">
+                  <li class="span4">
+                    <a :href="`/${params.locale}/works/soratoiro`" class="thumbnail">
+                      <img src="~/assets/img/soratoiro-thumb.png" alt="">
+                    </a>
+                  </li>
+                  <li class="span4">
+                    <a :href="`/${params.locale}/works/sustina`" class="thumbnail">
+                      <img src="~/assets/img/sustina-thumb.png" alt="">
                     </a>
                   </li>
                   <li class="span4 hidden-phone">
