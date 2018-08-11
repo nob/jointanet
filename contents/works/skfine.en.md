@@ -1,5 +1,5 @@
 ---
-title: 制作事例
+title: Example of past work
 date: 2018-08-09T15:25:58.886Z
 screenshot: /img/skfine.png
 domain: www.skfine.com
