@@ -1,5 +1,5 @@
 ---
-title: Works
+title: Example of past work
 date: 2018-08-09T15:18:20.164Z
 screenshot: /img/ippuku.png
 domain: www.ippukuberkeley.com
