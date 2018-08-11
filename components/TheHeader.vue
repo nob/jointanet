@@ -3,11 +3,11 @@
       <div id="top-pad1"></div>
       <div id="top-pad2"></div>
       <div class="container clearfix">
-          <a class="logo" :href="`/${this.$route.params.locale}`"><img src="~/assets/img/logo-l.png" alt="Jointanet"></a>
+          <a class="logo" :href="`/${this.$route.params.locale}/`"><img src="~/assets/img/logo-l.png" alt="Jointanet"></a>
           <ul class="nav visible-desktop clearfix">
-              <li class="text-center"><a :href="`/${this.$route.params.locale}/#services`"><strong>{{ navi.sec1 }}</strong></a></li>
-              <li class="text-center"><a :href="`/${this.$route.params.locale}/#price`"><strong>{{ navi.sec2 }}</strong></a></li>
-              <li class="text-center"><a :href="`/${this.$route.params.locale}/#works`"><strong>{{ navi.sec3 }}</strong></a></li>
+              <li class="text-center"><a href="#services"><strong>{{ navi.sec1 }}</strong></a></li>
+              <li class="text-center"><a href="#price"><strong>{{ navi.sec2 }}</strong></a></li>
+              <li class="text-center"><a href="#works"><strong>{{ navi.sec3 }}</strong></a></li>
           </ul>
           <a v-if="!(/(en|ja)\/*$/i.test(this.$route.path))" id="btn-back-to-home" class="btn btn-inverse pull-left hidden-desktop" :href="backUrl" type="button"><i class="icon-chevron-left icon-white"></i>&nbsp;戻る</a>
       </div>
