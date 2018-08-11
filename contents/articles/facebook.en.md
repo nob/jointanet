@@ -16,7 +16,7 @@ This event offers grand opportunities for any and all businesses to introduce an
 \
 \
 \
-###Create a Internet Presence with Your Own Domain
+### Create a Internet Presence with Your Own Domain
 It is important to keep in mind that your business Facebook page is nothing more than space/booth rented for free on a huge Internet event called Facebook. This event run has constantly changing administrative policies and rules decided by the management, i.e.Facebook. And, as long as you are borrowing a space there you must constantly follow these changes and adapt your page accordingly.
 
 Even after periods of amazing rapid growth, Facebook continues to grow and expand. And although it may be hard to imagine, there may be a day soon where it looses impact, breaks apart, or morphs into something different.
@@ -27,7 +27,7 @@ Besides having this space/booth on Facebook, it is essential for you to create a
 \
 \
 \
-###The Limits of Expression on Facebook
+### The Limits of Expression on Facebook
 As you may well know, a Facebook business page will look a lot like what you see below:
 ![Facebook page](/img/fbpage.png)
 
