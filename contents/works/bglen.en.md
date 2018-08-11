@@ -1,5 +1,5 @@
 ---
-title: 制作事例
+title: Works
 date: 2018-08-09T15:17:31.226Z
 screenshot: /img/bglen.png
 domain: www.bglen.com
