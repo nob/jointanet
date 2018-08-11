@@ -1,5 +1,5 @@
 ---
-title: 制作事例
+title: Example of past work
 date: 2018-08-09T15:27:10.255Z
 screenshot: /img/sustina.png
 domain: sustina.co
