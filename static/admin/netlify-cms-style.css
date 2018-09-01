@@ -1,0 +1,11 @@
+html,
+body {
+  background-color: grey;
+  color: red;
+  font-size: 14px;
+  font-family: "Open Sans", "Hiragino Kaku Gothic ProN", "Meiryo", "MS PGothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  padding: 20px;
+}
