@@ -10,6 +10,8 @@ backend:
 media_folder: "static/img" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/img" # The src attribute for uploaded media will begin with /images/uploads
 
+display_url: https://jointanet.com
+
 collections: # A list of collections the CMS should be able to edit
   - name: "articles_en" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Articles(English)" # Used in the UI, ie.: "New Post"
