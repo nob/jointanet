@@ -1,8 +1,8 @@
-http://jointanet.com https://jointanet.com/en/ 301 Language=en
-https://jointanet.com https://jointanet.com/en/ 301 Language=en
+http://jointanet.com https://jointanet.com/en/ 301 Language=en, en-us
+https://jointanet.com https://jointanet.com/en/ 301 Language=en, en-us
 
-http://jointanet.com https://jointanet.com/ja/ 301 Language=ja
-https://jointanet.com https://jointanet.com/ja/ 301 Language=ja
+http://jointanet.com https://jointanet.com/ja/ 301 Language=ja, ja-jp
+https://jointanet.com https://jointanet.com/ja/ 301 Language=ja, ja-jp
 
 /en/* /en/404/index.html 404
 /ja/* /ja/404/index.html 404
