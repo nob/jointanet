@@ -4,7 +4,7 @@ $(window).load(function(){
 		scrolltoId(target_id);
 	}
 	$('.nav a').click(function(event){
-		if($(this).attr('href').match(/^(#.+)$/)) {
+		if($(this).attr('href').match(/^.+(#.+)$/)) {
 			scrolltoId(RegExp.$1);
 			event.preventDefault ? event.preventDefault() : event.returnValue = false;
 		}
