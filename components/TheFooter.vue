@@ -8,7 +8,7 @@
               </div>
               <div class="span6">
                   <address class="clearfix">
-                      <h4>ジョインタネット</h4>
+                      <h4>ジョインタネット(Fractals合同会社)</h4>
                       <p><small>{{ company.address_label}}:&nbsp;</small>{{ company.address }}</p>
                       <p><small>{{ company.tel_label }}: &nbsp;</small>{{ company.tel }}</p>
                       <p><small>{{ company.business_label }}:&nbsp;</small>{{ company.business }}</p>
